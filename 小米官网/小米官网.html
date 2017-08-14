@@ -1,0 +1,5514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>小米官网你值得拥有</title>
+  <link rel="SHORTCUT ICON" href="images/bitbug_favicon (4).ico">
+	<style type="text/css">
+	 *{
+	 	margin: 0;
+	 	padding: 0;
+	 }
+	 .wrap{
+	 	width: 1340px;
+		height:4500px;
+		margin: 0 auto;
+	 }
+   /*头部*/
+	.topbar{
+		width: 1340px;
+		height: 40px;
+		margin: 0 auto;
+		position: relative;
+		z-index: 30px;
+		font-size: 12px;
+		color: #b0b0b0;
+		background: #333;
+		/*border: 1px solid red;*/
+	}
+	.container{
+     width: 1200px;
+     height: 40px;
+     margin-right: auto;
+		margin-left: auto;
+		color: #b0b0b0;
+		font-size: 12px;
+	}
+	ul,li{
+      list-style: none;
+	}
+	a{
+		text-decoration: none;
+	}
+  /*头部导航栏*/
+	.topbar_nav{
+      width: 640px;
+      height: 40px;
+      float: left;   
+      line-height: 40px;  
+	}
+	.topbar_nav  div a{
+    color: #b0b0b0;
+    margin-right: 6px;
+	}
+	.sep{
+		margin-right: 6px;
+		color: #424242;
+	}
+   .topbar_nav a:hover {
+   	color: rgb(255,255,255);
+   	cursor: pointer;
+   }
+   /*登入栏*/
+   .dengru{
+   	 width: 148px;
+   	 height: 40px;
+   	 line-height: 40px;
+   	 margin-left:288px;
+   	 float: left;
+   }
+   .dengru a{
+   	 width: 148px;
+   	  height: 40px;
+   	  color: #b0b0b0;
+   	 margin-right: 5px;
+   }
+   .dengru a:hover{
+   	color: rgb(255,255,255);
+   	cursor: pointer;
+   }
+   /*购物栏*/
+   .gouwu{
+   	width: 120px;
+   	height: 40px;
+   	float: right;
+   	background: url("images/shopping.png");
+   }
+   .cut_menu{
+   	width: 275px;
+   	height: 60px;
+   	margin-left: -155px;
+   	margin-top: 40px;
+    visibility: hidden;
+    transition: all .5s;
+    border:0px;
+    position: relative;
+    color: #fff;
+    z-index: 4;
+    background: #fff;
+	  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+   }
+   .cut_menu p{
+   	  text-align: center;
+   	  line-height: 100px;
+   }
+   .gouwu:hover{
+   	background: url("images/shopping_change.png") no-repeat;
+   	cursor: pointer;
+    z-index: 5;
+   }
+   .gouwu:hover .cut_menu {
+   	visibility: visible;
+	  height: 100px;
+	  line-height: 120px;
+	  color: #000;
+    z-index: 10;
+   	cursor: pointer;
+   }
+     /*小米logo*/
+   .header{
+   	width: 1340px;
+   	height: 100px;
+    position:relative;
+    z-index: 3;
+    /*border: 1px solid yellow;*/
+   }
+   .header_1{
+   	width: 1225px;
+   	height: 100px;
+   	margin-left: auto;
+   	margin-right: auto;
+   	position: relative;
+   }
+   .header_logo{
+   	width: 62px;
+   	height: 55px;
+   	float: left;
+   	margin-top: 20px;
+   	margin-right: 10px;
+   	background: url("images/logo.png")
+   }
+   .header_ben{
+   	width: 128px;
+   	height: 100px;
+   	float: left;
+   	background: url("images/yybjb.gif") no-repeat center center;
+   }
+   /*一级子导航栏*/
+  .header_nav{
+  	width: 660px;
+  	height: 100px;
+  	float: left;
+    position: absolute;
+    left: 220px;
+  }
+  /*小米*/
+  .header_nav li{
+  	/*width: 64px;*/
+  	height: 23px;
+  	line-height:23px;
+  	font-size: 16px;
+  	margin-top: 12px;
+  	display: inline-block;
+  	float: left;
+  	position: relative;
+  	padding: 26px 10px 38px 10px;
+  }
+  .header_nav li a{
+  		  width: 64px;
+  	    height: 23px;
+  	    color: #333;  
+  }
+  .active{
+      	width: 1340px;
+      	height: 230px;
+        position: absolute;
+        top: 88px;
+        display: none;
+        border-top: 1px solid rgb(224,224,224);
+        /*visibility: hidden;*/
+        left: -276px;
+        z-index: 2;
+        transition: all .5s ease-in;
+        background: rgb(255,255,255);
+        box-shadow: 0 3px 4px rgba(0,0,0,0.18);
+        transition: box-shadow .2s;
+  }
+  .active li{
+  	 float: left;
+  	 width: 160px;
+  	 height: 110px;
+  	 padding: 35px 12px  0 12px;
+  	 border-right: 1px solid #e0e0e0;
+  }
+   .active li a span{
+   	    text-align: center;
+   	    color: #333;
+      	display:block;
+   }
+   .active li a .price{
+   	  color: #ff6700;
+   }
+   .header_nav  a:hover{
+   	    color: #ff6700;
+   }
+  .header_nav >li:hover .active{
+	/*visibility: visible;*/
+	display: block;
+	line-height: 120px;
+	color: #000;
+  /*transition: all 1s linear;*/
+   	cursor: pointer;
+}
+/*红米*/
+ .header_nav_1 li{
+  	width: 52px;
+  	height: 87px;
+  	line-height:23px;
+  	margin-top: 12px;
+  	display: inline-block;
+  	float: left;
+  	position: relative;
+  	padding: 26px 20px 38px 20px;
+  }
+  .flget{
+  	border: 1px solid rgb(255,203,0);
+  	width: 80px;
+  	height: 20px; 
+  	line-height: 20px;
+  	position: absolute;
+  	top: -12px;
+  	left: 54px;
+  	color: rgb(255,203,0);
+     display: inline-block;
+  }
+  .header_nav_1 li a{
+  		width: 32px;
+  	    height: 17px;
+  	    color: #333;
+  	    text-align:center;  
+  }
+  .active_1{
+      	width: 1340px;
+      	height: 230px;
+        position: absolute;
+        top: 88px;
+        display: none;
+        left:-360px;
+        z-index: 2;
+        border-top: 1px solid rgb(224,224,224);
+         background: rgb(255,255,255);
+        transition: all .5s ease-in;
+        box-shadow: 0 3px 4px rgba(0,0,0,0.18);
+        transition: box-shadow .2s;
+  }
+  .active_1 li{
+  	 float: left;
+  	 width: 160px;
+  	 height: 110px;
+  	 padding: 35px 12px  0 12px;
+  	 border-right: 1px solid #e0e0e0;
+
+  }
+   .active_1 li a span{
+   	    text-align: center;
+   	    color: #333;
+      	display:block;
+   }
+   .active_1 li a .price_1{
+   	  color: #ff6700;
+   }
+   .header_nav_1  a:hover{
+   	    color: #ff6700;
+   }
+  .header_nav_1:hover .active_1{
+	/*visibility: visible;*/
+	display: block;
+	line-height: 120px;
+	color: #000;
+   	cursor: pointer;
+}
+  /*平板电脑*/
+.header_nav_2 li{
+  	width: 52px;
+  	height: 87px;
+  	line-height:23px;
+  	margin-top: 12px;
+  	display: inline-block;
+  	float: left;
+  	position: relative;
+  	padding: 26px 20px 38px 20px;
+  }
+  .header_nav_2 li a{
+  		width: 32px;
+  	    height: 17px;
+  	    color: #333;
+  	    text-align:center;  
+  }
+  .active_2{
+      	width: 1340px;
+      	height: 230px;
+        position: absolute;
+        top: 88px;
+        display: none;
+        border-top: 1px solid rgb(224,224,224);
+        left:-413px;
+        z-index: 2;
+        background: rgb(255,255,255);
+        transition: all .5s ease-in;
+        box-shadow: 0 3px 4px rgba(0,0,0,0.18);
+        transition: box-shadow .2s;
+  }
+  .active_2 li{
+  	 float: left;
+  	 width: 160px;
+  	 height: 110px;
+     /*overflow:hidden;*/
+  	 padding: 35px 12px  0 12px;
+  	 border-right: 1px solid #e0e0e0;
+
+  }
+   .active_2 li a span{
+   	    text-align: center;
+   	    color: #333;
+      	display:block;
+   }
+   .active_2 li a .price_2{
+   	  color: #ff6700;
+   }
+   .header_nav_2  a:hover{
+   	    color: #ff6700;
+   }
+  .header_nav_2:hover .active_2{
+	/*visibility: visible;*/
+	display: block;
+	line-height: 120px;
+	color: #000;
+   	cursor: pointer;
+}
+/*电视*/
+.header_nav_3 li{
+  	width: 52px;
+  	height: 87px;
+  	line-height:23px;
+  	margin-top: 12px;
+  	display: inline-block;
+  	float: left;
+  	position: relative;
+  	padding: 26px 20px 38px 20px;
+  }
+  .header_nav_3 li a{
+  		width: 32px;
+  	    height: 17px;
+  	    color: #333;
+  	    text-align:center;  
+  }
+  .active_3{
+      	width: 1340px;
+      	height: 230px;
+        position: absolute;
+        top: 88px;
+        display: none;
+        left:-525px;
+        border-top: 1px solid rgb(224,224,224);
+        z-index: 2;
+        background: rgb(255,255,255);
+        transition: all .5s ease-in;
+        box-shadow: 0 3px 4px rgba(0,0,0,0.18);
+        transition: box-shadow .2s;
+  }
+  .active_3 li{
+  	 float: left;
+  	 width: 160px;
+  	 height: 110px;
+  	 padding: 35px 12px  0 12px;
+  	 border-right: 1px solid #e0e0e0;
+  }
+   .active_3 li a span{
+   	    text-align: center;
+   	    color: #333;
+      	display:block;
+   }
+   .active_3 li a .price_3{
+   	  color: #ff6700;
+   }
+   .header_nav_3  a:hover{
+   	    color: #ff6700;
+   }
+  .header_nav_3:hover .active_3{
+	/*visibility: visible;*/
+	display: block;
+	line-height: 120px;
+	color: #000;
+   	cursor: pointer;
+}
+/*盒子 · 影音*/
+.header_nav_4 li{
+  	width: 52px;
+  	height: 87px;
+  	line-height:23px;
+  	margin-top: 12px;
+  	display: inline-block;
+  	float: left;
+  	position: relative;
+  	padding: 26px 20px 38px 20px;
+  }
+  .header_nav_4 li a{
+  		width: 32px;
+  	    height: 17px;
+  	    color: #333;
+  	    text-align:center;  
+  }
+  .active_4{
+      	width: 1340px;
+      	height: 230px;
+        position: absolute;
+        top: 88px;
+        display: none;
+        border-top: 1px solid rgb(224,224,224);
+        left:-577px;
+        z-index: 2;
+        background: rgb(255,255,255);
+        transition: all .5s ease-in;
+        box-shadow: 0 3px 4px rgba(0,0,0,0.18);
+        transition: box-shadow .2s;
+  }
+  .active_4 li{
+  	 float: left;
+  	 width: 160px;
+  	 height: 110px;
+  	 padding: 35px 12px  0 12px;
+  	 border-right: 1px solid #e0e0e0;
+  }
+   .active_4 li a span{
+   	    text-align: center;
+   	    color: #333;
+      	display:block;
+   }
+   .active_4 li a .price_4{
+   	  color: #ff6700;
+   }
+   .header_nav_4  a:hover{
+   	    color: #ff6700;
+   }
+  .header_nav_4:hover .active_4{
+	/*visibility: visible;*/
+	display: block;
+	line-height: 120px;
+	color: #000;
+   	cursor: pointer;
+}
+/*路由器*/
+.header_nav_5 li{
+  	width: 52px;
+  	height: 87px;
+  	line-height:23px;
+  	margin-top: 12px;
+  	display: inline-block;
+  	float: left;
+  	position: relative;
+  	padding: 26px 20px 38px 20px;
+  }
+  .header_nav_5 li a{
+  		width: 32px;
+  	    height: 17px;
+  	    color: #333;
+  	    text-align:center;  
+  }
+  .active_5{
+      	width: 1340px;
+      	height: 230px;
+        position: absolute;
+        top: 88px;
+        display: none;
+        left:-675px;
+        z-index: 2;
+        border-top: 1px solid rgb(224,224,224);
+        background: rgb(255,255,255);
+        transition: all .5s ease-in;
+        box-shadow: 0 3px 4px rgba(0,0,0,0.18);
+        transition: box-shadow .2s;
+  }
+  .active_5 li{
+  	 float: left;
+  	 width: 160px;
+  	 height: 110px;
+  	 padding: 35px 12px  0 12px;
+  	 border-right: 1px solid #e0e0e0;
+  }
+   .active_5 li a span{
+   	    text-align: center;
+   	    color: #333;
+      	display:block;
+   }
+   .active_5 li a .price_5{
+   	  color: #ff6700;
+   }
+   .header_nav_5  a:hover{
+   	    color: #ff6700;
+   }
+  .header_nav_5:hover .active_5{
+	/*visibility: visible;*/
+	display: block;
+	line-height: 120px;
+	color: #000;
+   	cursor: pointer;
+}
+/*智能硬件*/
+.header_nav_6 li{
+  	width: 52px;
+  	height: 87px;
+  	line-height:23px;
+  	margin-top: 12px;
+  	display: inline-block;
+  	float: left;
+  	position: relative;
+  	padding: 26px 20px 38px 20px;
+  }
+  .header_nav_6 li a{
+  		width: 32px;
+  	    height: 17px;
+  	    color: #333;
+  	    text-align:center;  
+  }
+  .active_6{
+      	width: 1340px;
+      	height: 230px;
+        position: absolute;
+        top: 88px;
+        display: none;
+        border-top: 1px solid rgb(224,224,224);
+        left:-743px;
+        z-index: 2;
+        background: rgb(255,255,255);
+        transition: all .5s ease-in;
+        box-shadow: 0 3px 4px rgba(0,0,0,0.18);
+        transition: box-shadow .2s;
+  }
+  .active_6 li{
+  	 float: left;
+  	 width: 160px;
+  	 height: 110px;
+  	 padding: 35px 12px  0 12px;
+  	 border-right: 1px solid #e0e0e0;
+  }
+   .active_6 li a span{
+   	    text-align: center;
+   	    color: #333;
+      	display:block;
+   }
+   .active_6 li a .price_6{
+   	  color: #ff6700;
+   }
+   .header_nav_6  a:hover{
+   	    color: #ff6700;
+   }
+  .header_nav_6:hover .active_6{
+	/*visibility: visible;*/
+	display: block;
+	line-height: 120px;
+	color: #000;
+   	cursor: pointer;
+}
+.header_2{
+	width: 296px;
+	height: 50px;
+	margin-top: 25px;
+	float: right;
+}
+/*搜索栏*/
+.seachfor{
+	position: relative;
+	width: 296px;
+	height: 50px;
+}
+.search-text{
+	width: 223px;
+	height: 50px;
+	padding:0 10px;
+	border: 1px solid #e0e0e0;
+	font-size: 14px;
+	line-height: 48px;
+	outline: 0;
+	transition: all .2s;
+	position: absolute;
+	top: 0;
+	right: 51px;
+	z-index: 1;
+}
+ .search-text:hover{
+	 box-shadow: 0 4px 8px rgba(0,0,0,.4);
+}
+.search-btn{
+	width: 52px;
+	height: 50px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	border: 1px solid #e0e0e0;
+	font-size: 24px;
+	line-height: 24px;
+	background: #fff;
+	color: #616161;
+	outline: 0;
+	transition: all .2s;
+	-webkit-appearance: button;
+    cursor: pointer;
+}
+.seachfor:hover .search-btn{
+	border-width: 1px;
+	border-color: #b0b0b0;
+	border-style: solid;
+}
+.search-btn{
+	width: 50px;
+	height: 48px;
+	background-image: url("images/search.png");
+	border-width: 1px;
+	border-color: #e0e0e0;
+	border-style: solid;
+	transition: all .5s;
+	background-size: 50px 48px;
+	cursor: pointer;
+}
+.seachfor .search-btn:hover{
+	background-image: url("images/hover_search.png");
+	border-width: 1px;
+	border-color: #ff6700;
+	border-style: solid;
+}
+
+.hader_4{
+	width: 60px;
+	height: 18px;
+}
+
+.hader_4 span{
+	width: 52px;
+	height: 18px;
+	background: #eee;
+	color: #757575;
+	display: inline-block;
+	font-size: 12px;
+	margin-right: 5px;
+	padding: 0 5px;
+	transition: all .2s;
+	position: absolute;
+	top: 42px;
+	z-index: 2;
+	left: 1000px;
+}
+
+.hader_4 span:hover{
+	color: rgb(255,255,255);
+	background: rgb(255,103,0);
+	cursor: pointer;
+}
+.hader_4 .n2{
+	width: 60px;
+	height: 18px;
+	background: #eee;
+	color: #757575;
+	display: inline-block;
+	font-size: 12px;
+	margin-left: 5px;
+	padding: 0 5px;
+	transition: all .2s;
+	position: absolute;
+	top: 42px;
+	z-index: 2;
+	left: 1070px;
+}
+/*左侧导航栏*/
+.main{
+	width: 1226px;
+	height: 462px;
+  margin-bottom: 38px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.left{
+	width: 232px;
+	height: 464px;
+	float: left;
+}
+.catoger{
+	width: 232px;
+	height: 422px;
+	border: 0;
+	color: #fff;
+	background: rgba(0,0,0,.6);
+	margin: 0;
+  z-index:2;
+    padding: 20px 0;
+    list-style-type: none;
+}
+.catoger .item{
+	width: 202px;
+	height: 42px;
+	line-height: 42px;
+	position: relative;
+  display: block;
+  font-size: 16px;
+  background: url("./images/892.png") no-repeat 200px center;
+  background-size: 16px 16px;
+	padding-left: 30px;
+	color:rgb(255,255,255);
+}
+.catoger .item a{
+	color:rgb(255,255,255);
+}
+.catoger .item:hover{
+  background:#ff6700;
+ /* opacity: 0.4;*/
+  cursor: pointer;
+}
+.catoger .item:hover .cator_1{
+  /*visibility: visible;*/
+  display: block;
+  color: #000;
+  cursor: pointer;
+}
+.cator_1{
+    width: 645px;
+    height: 460px;
+    display: none;
+    background: rgb(255,255,255);
+    position: absolute;
+    border-top: 1px solid rgb(224,224,224);
+    transition: all .5s ease-in;
+    box-shadow: 0 3px 4px rgba(0,0,0,0.18);
+    top: -20px;
+    left: 232px;
+    float: left;
+}
+.cator_1 li{
+  width: 210px;
+  height: 77px;
+}
+.cator_1 li a{
+  width:71px;
+  height: 16px;
+  display: inline;
+}
+.cator_1 li a img{
+  width: 40px;
+  height: 40px;
+  line-height: 77px;
+  padding: 18px 0 18px 12px; 
+  margin-right: 8px;
+  vertical-align: middle;
+}
+.cator_1 li .a1_1{
+  color: #ff6700;
+  width:71px;
+  height: 16px;
+}
+.cator_1 li .a2_1{
+   color: #333;
+   width:71px;
+  height: 16px;
+}
+.cator_1 li span{
+  width: 50px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  margin-left: 16px;
+  display: inline-block;
+  border: 1px solid #ff6700;
+  font-size: 10px;
+  color:#ff6700;
+}
+.cator_1 .span_1{
+  margin-left: 13px;
+}
+.cator_1 .span_2{
+  margin-left: 35px;
+}
+.cator_1 .span_3{
+  margin-left: 49px;
+}
+.cator_1 .span_4{
+  margin-left: 13px;
+}
+.cator_1 .span_5{
+  margin-left:24px;
+}
+.cator_2 ul{
+  width: 210px;
+  height: 462px;
+   position: absolute;
+  top: 0px;
+  left:212px;
+}
+.cator_2 li{
+  width: 210px;
+  height: 77px;
+}
+.cator_2 li a{
+  width:71px;
+  height: 16px;
+  display: inline;
+}
+.cator_2 li a img{
+  width: 40px;
+  height: 40px;
+  line-height: 77px;
+  padding: 18px 0 18px 12px; 
+  margin-right: 8px;
+  vertical-align: middle;
+}
+.cator_2 li .a1_1{
+  color: #ff6700;
+  width:71px;
+  height: 16px;
+}
+.cator_2 li .a2_1{
+   color: #333;
+   width:71px;
+  height: 16px;
+}
+.cator_2 li span{
+  width: 50px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  margin-left: 3px;
+  display: inline-block;
+  border: 1px solid #ff6700;
+  font-size: 10px;
+  color:#ff6700;
+}
+.cator_2 .tor_1{
+  margin-left: 13px;
+}
+.cator_2 .tor_2{
+  margin-left: 46px;
+}
+.cator_2 .tor_3{
+  margin-left: 56px;
+}
+.cator_2 .tor_4{
+  margin-left: 45px;
+}
+.cator_2 .tor_5{
+  margin-left:33px;
+}
+.xuangou{
+   position: absolute;
+  top:0px;
+  left: 220px;
+}
+.cator_1 li a:hover{
+  color: #ff6700;
+  cursor: pointer;
+}
+.cator_4{
+    width: 250px;
+    height: 460px;
+    display: none;
+    background: rgb(255,255,255);
+    position: absolute;
+    border-top: 1px solid rgb(224,224,224);
+    transition: all .5s ease-in;
+    box-shadow: 0 3px 4px rgba(0,0,0,0.18);
+    top: -62px;
+    left: 232px;
+    float: left;
+}
+.cator_4 li{
+  width: 250px;
+  height: 77px;
+}
+.cator_4 li a{
+  width:71px;
+  height: 16px;
+  display: inline;
+}
+.cator_4 li a img{
+  width: 40px;
+  height: 40px;
+  line-height: 77px;
+  padding: 18px 0 18px 12px; 
+  margin-right: 8px;
+  vertical-align: middle;
+}
+.cator_4 li .a1_1{
+  color: #ff6700;
+  width:71px;
+  height: 16px;
+}
+.cator_4 li .a2_1{
+   color: #333;
+   width:71px;
+  height: 16px;
+}
+.cator_4 li span{
+  width: 50px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  margin-left: 30px;
+  display: inline-block;
+  border: 1px solid #ff6700;
+  font-size: 10px;
+  color:#ff6700;
+}
+.cator_4 .span_1{
+  margin-left:58px;
+}
+.cator_4 .span_2{
+  margin-left: 35px;
+}
+.cator_4 .span_3{
+  margin-left: 5px;
+}
+.cator_4 .span_4{
+  margin-left: 35px;
+}
+.cator_4 .span_5{
+  margin-left:35px;
+}
+.catoger .item:hover .cator_4{
+  /*visibility: visible;*/
+  display: block;
+  color: #000;
+  cursor: pointer;
+}
+.cator_4 li a:hover{
+  color: #ff6700;
+  cursor: pointer;
+}
+.cator_5 {
+    width: 992px;
+    height: 460px;
+    display: none;
+    box-shadow: 0 3px 4px rgba(0,0,0,0.18);
+    background: rgb(255,255,255);
+    position: absolute;
+    border-top: 1px solid rgb(224,224,224);
+    transition: all .5s ease-in;
+    top: -104px;
+    left: 232px;
+    float: left;
+}
+.cator_5 .pinban{
+   width: 992px;
+    height: 460px;
+    box-shadow: 0 3px 4px rgba(0,0,0,0.18);
+    background: rgb(255,255,255);
+}
+.cator_5 li{
+  width: 210px;
+  height: 77px;
+}
+.cator_5 li a{
+  width:71px;
+  height: 16px;
+  display: inline;
+}
+.cator_5 li a img{
+  width: 40px;
+  height: 40px;
+  line-height: 77px;
+  padding: 18px 0 18px 12px; 
+  margin-right: 8px;
+  vertical-align: middle;
+}
+.cator_5 li .a1_1{
+  color: #ff6700;
+  width:71px;
+  height: 16px;
+}
+.cator_5 li .a2_1{
+   color: #333;
+   width:71px;
+  height: 16px;
+}
+.cator_5 li span{
+  width: 50px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  margin-left: 16px;
+  display: inline-block;
+  border: 1px solid #ff6700;
+  font-size: 10px;
+  color:#ff6700;
+}
+.cator_5 li a:hover{
+  color: #ff6700;
+  cursor: pointer;
+}
+.catoger .item:hover .cator_5{
+  /*visibility: visible;*/
+  display: block;
+  color: #000;
+  cursor: pointer;
+}
+.cator_6 ul{
+  width: 230px;
+  height: 460px;
+   position: absolute;
+  top:0px;
+  left:240px;
+  /*z-index: 0;*/
+  /*border: 1px solid green;*/
+}
+.cator_6 li{
+  width: 230px;
+  height: 77px;
+}
+.cator_6 li a{
+  width:71px;
+  height: 16px;
+  display: inline;
+  
+}
+.cator_6 li a img{
+  width: 40px;
+  height: 40px;
+  line-height: 77px;
+  padding: 18px 0 18px 12px; 
+  margin-right: 8px;
+  vertical-align: middle;
+}
+.cator_6 li .a1_1{
+  color: #ff6700;
+  width:71px;
+  height: 16px;
+}
+.cator_6 li .a2_1{
+   color: #333;
+   width:71px;
+  height: 16px;
+}
+.cator_6 li span{
+  width: 50px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  margin-left: 3px;
+  display: inline-block;
+  border: 1px solid #ff6700;
+  font-size: 10px;
+  color:#ff6700;
+}
+.cator_7 ul{
+  width: 230px;
+  height: 460px;
+   position: absolute;
+  top:0px;
+  left:260px;
+ /* margin-right: 30px;*/
+  /*border: 1px solid green;*/
+}
+.cator_7 li{
+  width: 210px;
+  height: 77px;
+}
+.cator_7 li a{
+  width:71px;
+  height: 16px;
+  display: inline;
+  
+}
+.cator_7 li a img{
+  width: 40px;
+  height: 40px;
+  line-height: 77px;
+  padding: 18px 0 18px 12px; 
+  margin-right: 8px;
+  vertical-align: middle;
+}
+.cator_7 li .a1_1{
+  color: #ff6700;
+  width:71px;
+  height: 16px;
+}
+.cator_7 li .a2_1{
+   color: #333;
+   width:71px;
+  height: 16px;
+}
+.cator_7 li span{
+  width: 50px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  margin-left: 3px;
+  display: inline-block;
+  border: 1px solid #ff6700;
+  font-size: 10px;
+  color:#ff6700;
+}
+.xuangou_1{
+  position: absolute;
+  top:0px;
+  left: 240px;
+}
+.cator_8 {
+    width: 992px;
+    height: 460px;
+    display: none;
+    box-shadow: 0 3px 4px rgba(0,0,0,0.18);
+    background: rgb(255,255,255);
+    border-top: 1px solid rgb(224,224,224);
+    position: absolute;
+    transition: all .5s ease-in;
+    top: -146px;
+    /*top: 0;*/
+    left: 232px;
+    float: left;
+}
+.cator_8 .pinban{
+   width: 992px;
+    height: 460px;
+    box-shadow: 0 3px 4px rgba(0,0,0,0.18);
+    background: rgb(255,255,255);
+}
+.cator_8 li{
+  width: 210px;
+  height: 77px;
+  /*margin-left: 20px;*/
+  /*border: 1px solid blue;*/
+}
+.cator_8 li a{
+  width:71px;
+  height: 16px;
+  display: inline;
+  /*color: #333;*/
+}
+.cator_8 li a img{
+  width: 40px;
+  height: 40px;
+  line-height: 77px;
+  /*display: block;*/
+  padding: 18px 0 18px 12px; 
+  margin-right: 8px;
+  vertical-align: middle;
+}
+.cator_8 li .a1_1{
+  color: #ff6700;
+  width:71px;
+  height: 16px;
+}
+.cator_8 li .a2_1{
+   color: #333;
+   width:71px;
+  height: 16px;
+}
+.cator_8 li span{
+  width: 50px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  margin-left: 16px;
+  display: inline-block;
+  border: 1px solid #ff6700;
+  font-size: 10px;
+  color:#ff6700;
+}
+.cator_8 li a:hover{
+  color: #ff6700;
+  cursor: pointer;
+}
+.cator_9 ul{
+  width: 230px;
+  height: 460px;
+   position: absolute;
+  top:0px;
+  left:240px;
+}
+.cator_9 li{
+  width: 230px;
+  height: 77px;
+}
+.cator_9 li a{
+  width:71px;
+  height: 16px;
+  display: inline;
+  
+}
+.cator_9 li a img{
+  width: 40px;
+  height: 40px;
+  line-height: 77px;
+  padding: 18px 0 18px 12px; 
+  margin-right: 8px;
+  vertical-align: middle;
+}
+.cator_9 li .a1_1{
+  color: #ff6700;
+  width:71px;
+  height: 16px;
+}
+.cator_9 li .a2_1{
+   color: #333;
+   width:71px;
+  height: 16px;
+}
+.cator_9 li span{
+  width: 50px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  margin-left: 3px;
+  display: inline-block;
+  border: 1px solid #ff6700;
+  font-size: 10px;
+  color:#ff6700;
+}
+.cator_10 ul{
+  width: 230px;
+  height: 460px;
+   position: absolute;
+  top:0px;
+  left:260px;
+}
+.cator_10 li{
+  width: 210px;
+  height: 77px;
+}
+.cator_10 li a{
+  width:71px;
+  height: 16px;
+  display: inline;
+}
+.cator_10 li a img{
+  width: 40px;
+  height: 40px;
+  line-height: 77px;
+  padding: 18px 0 18px 12px; 
+  margin-right: 8px;
+  vertical-align: middle;
+}
+.cator_10 li .a1_1{
+  color: #ff6700;
+  width:71px;
+  height: 16px;
+}
+.cator_10 li .a2_1{
+   color: #333;
+   width:71px;
+  height: 16px;
+}
+.cator_10 li span{
+  width: 50px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  margin-left: 3px;
+  display: inline-block;
+  border: 1px solid #ff6700;
+  font-size: 10px;
+  color:#ff6700;
+}
+.catoger .item:hover .cator_8{
+  /*visibility: visible;*/
+  display: block;
+  color: #000;
+  cursor: pointer;
+}
+.cator_11 {
+    width: 450px;
+    height: 460px;
+    display: none;
+    box-shadow: 0 3px 4px rgba(0,0,0,0.18);
+    background: rgb(255,255,255);
+    border-top: 1px solid rgb(224,224,224);
+    position: absolute;
+    transition: all .5s ease-in;
+    top: -188px;
+    /*top: 0;*/
+    left: 232px;
+    float: left;
+}
+.cator_11 .pinban{
+   width: 450px;
+    height: 460px;
+    box-shadow: 0 3px 4px rgba(0,0,0,0.18);
+    background: rgb(255,255,255);
+}
+.cator_11 li{
+  width: 210px;
+  height: 77px;
+}
+.cator_11 li a{
+  width:71px;
+  height: 16px;
+  display: inline;
+}
+.cator_11 li a img{
+  width: 40px;
+  height: 40px;
+  line-height: 77px;
+  padding: 18px 0 18px 12px; 
+  margin-right: 8px;
+  vertical-align: middle;
+}
+.cator_11 li .a1_1{
+  color: #ff6700;
+  width:71px;
+  height: 16px;
+}
+.cator_11 li .a2_1{
+   color: #333;
+   width:71px;
+  height: 16px;
+}
+
+.cator_11 li a:hover{
+  color: #ff6700;
+  cursor: pointer;
+}
+.cator_12 li{
+  width: 210px;
+  height: 77px;
+  position: absolute;
+  top: 0px;
+  left: 216px;
+}
+.cator_12 li a{
+  width:71px;
+  height: 16px;
+  display: inline;
+  
+}
+.cator_12 li a img{
+  width: 40px;
+  height: 40px;
+  line-height: 77px;
+  padding: 18px 0 18px 12px; 
+  vertical-align: middle;
+}
+.cator_12 li .a1_1{
+  color: #ff6700;
+  width:71px;
+  height: 16px;
+}
+.cator_12 li .a2_1{
+   color: #333;
+   width:71px;
+  height: 16px;
+}
+.catoger .item:hover .cator_11{
+  /*visibility: visible;*/
+  display: block;
+  color: #000;
+  cursor: pointer;
+}
+/*右侧轮播图*/
+.right{
+	width: 990px;
+	height: 462px;
+	float: right;
+	/*background: url("images/xmad_14919076510657_pVfsS.jpg");*/
+	background-size: 100% 100%;
+  position: relative;
+	/*border: 1px solid purple;*/
+}
+ .right ul{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+        }
+       .right ul li{
+           width: 100%;
+           height: 100%;
+           position: absolute;
+       }
+       .right ul li img{
+           width: 100%;
+           height: 100%;
+       }
+        .slide{
+            position: absolute;
+            left: 80%;
+            top:410px;
+        }
+       .slide div{
+           border:5px solid white;
+          /* border:5px solid  rgba(0,0,0,0.4);
+           background: rgba(255,255,255,0.4);*/
+           border-radius: 5px;
+           float:left;
+           margin-left:10px;
+           cursor:pointer;
+           opacity: 0.4;
+       }
+/*选购手机栏*/
+.home_row{
+  width: 1226px;
+  height: 170px;
+  /*border: 1px solid yellow;*/
+  margin: auto;
+}
+.div_span{
+  width: 232px;
+  height: 170px;
+  float: left;
+  position: relative;
+  /*border: 1px solid blue;*/
+}
+.span_home{
+  width: 232px;
+  height: 170px;
+  min-height: 1px;
+  /*float: left;*/
+  box-sizing: border-box;
+  background: rgb(95,87,80);
+  border-right: 1px solid rgb(102,94,87);
+}
+.span_home li{
+  width: 70px;
+  height: 83px;
+  position: relative;
+ border-bottom: 1px solid rgb(102,94,87);
+  float: left;
+  padding: 2px;
+  padding: 0 3px;
+}
+.top_left{
+  width: 66px;
+  height: 64px;
+  background: url("images/xuangoushouji.png")no-repeat  center;
+  border-right: 1px solid rgb(102,94,87); 
+}
+.top_left:hover{
+  width: 70px;
+  height: 83px;
+  background: url("images/xuangoushouji_hover.png")no-repeat  center;
+  border-right: 1px solid rgb(102,94,87);
+  cursor: pointer;
+}
+.top_left_1{
+  width: 66px;
+  height: 64px;
+  background: url("images/qiyetuangou.png")no-repeat  center;
+  border-right: 1px solid rgb(102,94,87);
+}
+.top_left_1:hover{
+  width: 70px;
+  height: 83px;
+  background: url("images/qiyetuangou_hover.png")no-repeat  center;
+  border-right: 1px solid rgb(102,94,87);
+  cursor: pointer;
+}
+.top_left_2{
+  width: 66px;
+  height: 64px;
+  background: url("images/guanfanchanpin.png")no-repeat  center;
+  border-right: 1px solid rgb(102,94,87);
+}
+.top_left_2:hover{
+  width: 70px;
+  height: 83px;
+  background: url("images/guanfanchanpin_hover.png")no-repeat  center;
+  border-right: 1px solid rgb(102,94,87);
+  cursor: pointer;
+}
+.top_left_3{
+  width: 66px;
+  height: 64px;
+  background: url("images/xiaomiyidong.png")no-repeat  center;
+  border-right: 1px solid rgb(102,94,87);
+}
+.top_left_3:hover{
+  width: 70px;
+  height: 83px;
+  background: url("images/xiaomiyidong_hover.png")no-repeat  center;
+  border-right: 1px solid rgb(102,94,87);
+  cursor: pointer;
+}
+.top_left_4{
+  width: 66px;
+  height: 64px;
+  background: url("images/yijiuhuanxin.png")no-repeat  center;
+  border-right: 1px solid rgb(102,94,87);
+}
+.top_left_4:hover{
+  width: 70px;
+  height: 83px;
+  background: url("images/yijiuhuanxin_hover.png")no-repeat  center;
+  border-right: 1px solid rgb(102,94,87);
+  cursor: pointer;
+}
+.top_left_5{
+  width: 66px;
+  height: 64px;
+  background: url("images/huafeichongzhi.png")no-repeat  center;
+  border-right: 1px solid rgb(102,94,87);
+}
+.top_left_5:hover{
+  width: 70px;
+  height: 83px;
+  background: url("images/huafeichongzhi_hover.png")no-repeat  center;
+  border-right: 1px solid rgb(102,94,87);
+  cursor: pointer;
+}
+.div_form{
+  width: 976px;
+  height: 170px;
+  float: right;
+  /*border: 1px solid red;*/
+}
+.div_from_1{
+  width: 316px;
+  height: 170px;
+  float: left;
+  margin-right: 14px;
+  transition: box-shadow .2s linear;
+}
+.div_from_1 img{
+  width: 316px;
+  height: 170px;
+}
+.div_from_1:hover{
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+  cursor: pointer;
+}
+.div_from_2{
+  width: 316px;
+  height: 170px;
+  float: left;
+   margin-right: 14px;
+   transition: box-shadow .2s linear;
+}
+.div_from_2 img{
+  width: 316px;
+  height: 170px;
+}
+.div_from_2:hover{
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+  cursor: pointer;
+}
+.div_from_3{
+  width: 316px;
+  height: 170px;
+  float: left;
+  transition: box-shadow .2s linear;
+}
+.div_from_3 img{
+  width: 316px;
+  height: 170px;
+}
+.div_from_3:hover{
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+  cursor: pointer;
+}
+.tait{
+  width: 1226px;
+  height: 58px;
+  margin: auto;
+  position: relative;
+}
+.title{
+  width: 1226px;
+  height: 58px;
+  margin: auto;
+  font-size: 22px;
+  font-weight: 200;
+  /*float: left;*/
+  line-height: 58px;
+  color: #333;
+   margin-top: 42px;
+}
+.more{
+  width: 70px;
+  height: 25px;
+  float: right;
+  /*background:#e0e0e0; */
+  position: absolute;
+  top: 16px;
+  right: 0;
+ border: 1px solid #e0e0e0;
+}
+.contros .a1{
+  width: 34px;
+  height: 24px;
+  border-right:1px solid #e0e0e0;
+  display: block;
+  float: left;
+  background: url("images/xiangzuozou.png")no-repeat 0 center;
+}
+.contros .a2{
+  width: 34px;
+  height: 24px;
+  border-right:1px solid #e0e0e0;
+  display: block;
+  float: left;
+  background: url("images/xiangyouzou.png")no-repeat 0 center;
+}
+.contros .a2:hover{
+  width: 34px;
+  height: 24px;
+  border-right:1px solid #e0e0e0;
+  display: block;
+  float: left;
+  background: url("images/xiangyouzou_hover.png")no-repeat 0 center;
+}
+
+/*小米明星单品*/
+.box-bd{
+  width: 1226px;
+  height: 340px;
+  padding-bottom: 40px;
+  margin: auto;
+}
+.box-bd ul{
+  width: 100%;
+  height: 100%;
+   margin: auto;
+}
+.box-bd li{
+  width: 230px;
+  height: 301px;
+  float: left;
+  padding-top: 39px;
+  text-align: center;
+  transition: all .6s;
+  border-top-color: #ffac13;
+  background: #fafafa;
+  margin-right: 14px;
+}
+.box-bd li img{
+  width: 160px;
+  height: 160px;
+  margin: 0 auto;
+  margin-bottom: 32px;
+}
+.box-bd .rainbow-item-1{
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: #ffac13;
+}
+.box-bd .rainbow-item-2{
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: #83c44e;
+}
+.box-bd .rainbow-item-3{
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: #2196f3;
+}
+.box-bd .rainbow-item-4{
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: #e53935;
+}
+.box-bd .rainbow-item-5{
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: #00c0a5;
+}
+.box-bd li p{
+  font-size: 14px;
+  margin-bottom: 8px;
+  color: #b0b0b0;
+}
+.box-bd li .box_p{
+  color: #212121;
+  font-weight: 400;
+}
+.box-bd li .price{
+  color: #ff6709;
+}
+/*智能硬件*/
+.pag_main{
+  width: 100%;
+  height: 4760px;
+  background: #f5f5f5;
+  position: relative;
+}
+.pag_main .boacker_er_1{
+  width: 1226px;
+  height: 58px;
+  margin: auto;
+  /*margin-top: 20px;*/
+  /*border:  1px solid red;*/
+}
+.boacker_er_1 .aut_er{
+  font-size: 22px;
+  font-weight: 200;
+  float: left;
+  line-height: 58px;
+  color: #333;
+}
+
+.boacker_er_1 .aur_e{
+   width: 92px;
+  height:58px; 
+  float: right;
+   background: url("images/chakanquanbu.png")no-repeat 0 center;
+}
+.boacker_er .aur_e img{
+  width: 92px;
+  height: 17px;
+ /*display: block;*/
+}
+.boacker_er_1 .aur_e:hover{
+  cursor: pointer;
+  z-index: 2;
+  background: url("images/chakanquanbu_hover.png") no-repeat 0 center;
+}
+.bricked{
+  width: 1240px;
+  height: 700px;
+  margin: auto;
+  position: relative;
+  /*border: 1px solid blue;*/
+}
+.bkr_row{
+  width: 1240px;
+  height: 700px;
+  /*border: 1px solid green;*/
+}
+
+.bkr_how {
+  width: 234px;
+  height: 628px;
+   /*margin-left: 14px;*/
+   float: left;
+   /*margin-bottom: 14px;*/
+}
+.brick-promo{
+  width: 238px;
+  height: 614px;
+   margin-left: -14px;
+  margin-bottom: -14px;
+  transform: translate3d(0, -2px, 0);
+  /*box-shadow: 0 15px 30px rgba(0,0,0,0.1);*/
+}
+.brick-item{
+  width: 234px;
+  height: 700px;
+  position: relative;
+  float: left;
+  background: #fff;
+  transition: all .2s linear;
+  transform: translate3d(0, -2px, 0);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+  margin-left: 14px;
+  margin-bottom: 14px;
+}
+.brick-item a{
+  display: block;
+    width: 100%;
+    height: 100%;
+}
+.bkr_how img{
+  width: 234px;
+  height: 700px;
+}
+.brick-promo:hover .brick-item {
+    z-index: 2;
+    box-shadow: 0px 5px 10px #d5d5d5;
+    margin-top: -3px;
+    cursor: pointer;
+}
+.spance_m{
+  width: 988px;
+  height:700px;
+  float: right;
+  /*margin-left: -10px;*/
+  /*border: 1px solid yellow;*/
+}
+.brick-list{
+  width: 992px;
+  height: 640px;
+  margin: 0 0 -14px -14px;
+}
+.brick-item-m{
+  width: 234px;
+  height: 300px;
+  padding: 20px 0 20px 5px;
+  margin: 0 0 14px 10px;
+  background: #fff;
+  transition: all .2s linear;
+  transform: translate3d(0, -2px, 0);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+  float: left;
+  /*border: 1px solid red;*/
+  text-align: center;
+}
+.figure-img{
+  width: 230px;
+  height: 300px;
+  margin-left: -3px;
+  /*margin: 0 37px 18px 37px;*/
+}
+.figure-img img{
+  margin-bottom: 8px;
+}
+.mijia{
+  color: #333;
+  font-weight: 400;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+.dianci{
+    color: #b0b0b0;
+   font-size: 12px;
+   margin-bottom: 8px;
+}
+.jiaqian{
+  color: #ff6700;
+  font-size:14px;
+}
+.brick-item-m1{
+  width: 230px;
+  height: 300px;
+  padding: 20px 0 20px 8px;
+  margin: 0 0 14px 8px;
+  background: #fff;
+  transition: all .2s linear;
+  transform: translate3d(0, -2px, 0);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+  float: left;
+  /*border: 1px solid red;*/
+  text-align: center;
+}
+.brick-item-m2{
+  width: 230px;
+  height: 300px;
+  padding: 20px 0 20px 8px;
+  margin: 0 0 14px 8px;
+  background: #fff;
+  float: left;
+  transition: all .2s linear;
+  transform: translate3d(0, -2px, 0);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+  /*border: 1px solid red;*/
+  /*text-align: center;*/
+}
+.brick-item-m3{
+  width: 230px;
+  height: 300px;
+  padding: 20px 0 20px 8px;
+  margin: 0 0 14px 8px;
+  background: #fff;
+  float: left;
+  transition: all .2s linear;
+  transform: translate3d(0, -2px, 0);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+  /*border: 1px solid red;*/
+  text-align: center;
+}
+.brick-item-m:hover{
+   z-index: 2;
+    box-shadow: 0px 5px 10px #d5d5d5;
+    margin-top: -3px;
+    cursor: pointer;
+}
+.brick-item-m1:hover{
+   z-index: 2;
+    box-shadow: 0px 5px 10px #d5d5d5;
+    margin-top: -3px;
+    cursor: pointer;
+}
+.brick-item-m2:hover{
+   z-index: 2;
+    box-shadow: 0px 5px 10px #d5d5d5;
+    margin-top: -3px;
+    cursor: pointer;
+}
+.brick-item-m3:hover{
+   z-index: 2;
+    box-shadow: 0px 5px 10px #d5d5d5;
+    margin-top: -3px;
+    cursor: pointer;
+}
+.figure-img_1{
+  width: 230px;
+  height: 300px;
+  margin-left: -3px;
+  /*margin: 0 37px 18px 37px;*/
+}
+.figure-img_1 img{
+  margin-bottom: 8px;
+}
+.brick-item-m4{
+  width: 230px;
+  height: 300px;
+  padding: 20px 0 20px 8px;
+  margin: 0 0 14px 8px;
+  background: #fff;
+  /*float: left;*/
+  position: absolute;
+  top:358px;
+  left: 240px;
+  transition: all .2s linear;
+  transform: translate3d(0, -2px, 0);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+  /*border: 1px solid red;*/
+  text-align: center;
+}
+.brick-item-m5{
+  width: 230px;
+  height: 300px;
+  padding: 20px 0 20px 8px;
+  margin: 0 0 14px 8px;
+  background: #fff;
+  position: absolute;
+  top:356px;
+  left: 487px;
+  /*float: left;*/
+  transition: all .2s linear;
+  /*transform: translate3d(0, -2px, 0);*/
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+  /*border: 1px solid red;*/
+  text-align: center;
+}
+.brick-item-m6{
+  width: 230px;
+  height: 300px;
+  padding: 20px 0 20px 8px;
+  margin: 0 0 14px 8px;
+  background: #fff;
+  position: absolute;
+  top:358px;
+  left: 734px;
+  /*float: left;*/
+  transition: all .2s linear;
+  transform: translate3d(0, -2px, 0);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+  /*border: 1px solid red;*/
+  text-align: center;
+}
+.ferts{
+  background-color: #83c44e;
+   width: 50px;
+   height: 16px;
+   line-height: 16px;
+  position: absolute;
+  top: 0;
+  left: 40%;
+  color: rgb(255,255,255);
+  font-size: 14px;
+}
+.brick-item-m7{
+  width: 230px;
+  height: 300px;
+  padding: 20px 0 20px 8px;
+  margin: 0 0 14px 8px;
+  background: #fff;
+  position: absolute;
+  top:358px;
+  left: 980px;
+  /*float: left;*/
+  transition: all .2s linear;
+  transform: translate3d(0, -2px, 0);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+  /*border: 1px solid red;*/
+  text-align: center;
+}
+.brick-item-m4:hover{
+   z-index: 2;
+    box-shadow: 0px 5px 10px #d5d5d5;
+    margin-top: -3px;
+    cursor: pointer;
+}
+.brick-item-m5:hover{
+   z-index: 2;
+    box-shadow: 0px 5px 10px #d5d5d5;
+    margin-top: -3px;
+    cursor: pointer;
+}
+.brick-item-m6:hover{
+   z-index: 2;
+    box-shadow: 0px 5px 10px #d5d5d5;
+    margin-top: -3px;
+    cursor: pointer;
+}
+.brick-item-m7:hover{
+   z-index: 2;
+    box-shadow: 0px 5px 10px #d5d5d5;
+    margin-top: -3px;
+    cursor: pointer;
+}
+/*搭配栏*/
+.box-hd{
+  width: 1226px;
+  height: 58px;
+  margin: 40px auto;
+  /*border: 1px solid purple;*/
+  /*margin: 0;*/
+  font-size: 16px;
+  font-weight: 200;
+  line-height: 58px;
+  color: #333;
+}
+.J_brickNav{
+  width: 320px;
+  height: 42px;
+  float: right;
+  margin-top: -48px;
+  /*border: 1px solid red;*/
+}
+.tab-list{
+  width: 320px;
+  height: 40px;
+  /*float: right;*/
+}
+.tab-list li{
+  float: left;
+  /*height: 18px;*/
+  line-height: 40px;
+  margin-right: 28px;
+}
+.J_brickNav li:hover{
+     color: #ff6700;
+     /*height: 42px;*/
+    border-bottom: 2px solid #ff6700;
+    cursor: pointer;
+}
+.J_brickBd{
+  width: 1226px;
+  height: 628px; 
+  position: relative;
+  /*border: 1px solid purple;*/
+  margin: auto;
+
+}
+.J_brickBd .bd_1{
+  width: 234px;
+  height: 300px;
+  float: left;
+   transition: all .2s linear;
+  transform: translate3d(0, -2px, 0);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+  /*border: 1px solid purple;*/
+}
+.J_brickBd .bd_1 img{
+   width: 234px;
+  height: 300px;
+}
+.J_brickBd .bd_2{
+  width: 234px;
+  height: 300px;
+  float: left;
+  background: #fff;
+   transition: all .2s linear;
+  transform: translate3d(0, -2px, 0);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+  margin-left: 10px;
+  margin-bottom: 14px;
+  /*border: 1px solid purple;*/
+}
+.J_brickBd .bd_2 img{
+  width: 150px;
+  height: 150px;
+  display: block;
+  padding: 20px 42px;
+
+}
+ .bd_2 .xiaomi{
+   width: 100%;
+   height: 20px;
+   color: #333;
+   font-size: 14px;
+    font-weight: 400;
+   line-height: 20px;
+   margin-bottom: 8px;
+   text-align:center;
+ }
+ .bd_2 .prive{
+   width: 100%;
+   height: 20px;
+   line-height: 20px;
+    color: #ff6700;
+   font-size: 14px;
+    font-weight: 400;
+   margin-bottom: 18px;
+   text-align:center;
+ }
+ .bd_2 .rivek{
+   width: 100%;
+   height: 20px;
+   line-height: 20px;
+    color: #b0b0b0;
+   font-size: 14px;
+    font-weight: 400;
+   text-align:center;
+   margin-bottom: 8px;
+ }
+ .review_waper{
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  z-index: 3;
+  width: 234px;
+  height: 90px;
+  overflow: hidden;
+  font-size: 12px;
+  background: #ff6700;
+  opacity: 0;
+  transition: all .2s linear;
+ }
+ .review_waper a{
+   width: 194px;
+  height:74px;
+  display: block;
+  padding: 8px 20px;
+  outline: 0;
+  color: #757575;
+ }
+ .review_waper .review{
+    width: 174px;
+    height: 16px;
+    margin-bottom: 5px;
+     line-height: 16px;
+    color: #fff;
+    display: block;
+ }
+ .review_waper .review_1{
+    width: 174px;
+    height: 16px;
+    margin-bottom: 10px;
+    line-height: 16px;
+    color: #fff;
+    display: block;
+ }
+  .review_waper .author{
+    width: 174px;
+    height: 16px;
+    margin-bottom: 5px;
+    line-height: 16px;
+    color: rgba(255,255,255,0.6);
+    display: block;
+  }
+ .J_brickBd .bd_2 .review_waper:hover {
+  cursor: pointer;
+  overflow: visible;
+  height: 0px;
+  transition: all 1s linear .2s;
+   opacity:1;
+  bottom: 0px;
+ }
+.J_brickBd .bd_3{
+  width: 234px;
+  height: 300px;
+  float: left;
+  background: #fff;
+   transition: all .2s linear;
+  transform: translate3d(0, -2px, 0);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+   margin-left: 10px;
+   margin-bottom: 14px;
+  /*border: 1px solid purple;*/
+}
+.J_brickBd .bd_3 img{
+  width: 150px;
+  height: 150px;
+  display: block;
+  padding: 20px 42px;
+}
+.bd_3 .xiaomi{
+   width: 100%;
+   height: 20px;
+   color: #333;
+   font-size: 14px;
+    font-weight: 400;
+   line-height: 20px;
+   margin-bottom: 8px;
+   text-align:center;
+ }
+ .bd_3 .prive{
+   width: 100%;
+   height: 20px;
+   line-height: 20px;
+    color: #ff6700;
+   font-size: 14px;
+    font-weight: 400;
+   margin-bottom: 18px;
+   text-align:center;
+ }
+ .bd_3 .rivek{
+   width: 100%;
+   height: 20px;
+   line-height: 20px;
+    color: #b0b0b0;
+   font-size: 14px;
+    font-weight: 400;
+   text-align:center;
+   margin-bottom: 8px;
+ }
+  
+.J_brickBd .bd_4{
+  width: 234px;
+  height: 300px;
+  float: left;
+  background: #fff;
+   transition: all .2s linear;
+  transform: translate3d(0, -2px, 0);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+   margin-left: 10px;
+   margin-bottom: 14px;
+  /*border: 1px solid purple;*/
+}
+.J_brickBd .bd_4 img{
+  width: 150px;
+  height: 150px;
+  display: block;
+  padding: 20px 42px;
+}
+.bd_4 .xiaomi{
+   width: 100%;
+   height: 20px;
+   color: #333;
+   font-size: 14px;
+    font-weight: 400;
+   line-height: 20px;
+   margin-bottom: 8px;
+   text-align:center;
+ }
+ .bd_4 .prive{
+   width: 100%;
+   height: 20px;
+   line-height: 20px;
+    color: #ff6700;
+   font-size: 14px;
+    font-weight: 400;
+   margin-bottom: 18px;
+   text-align:center;
+ }
+ .bd_4 .rivek{
+   width: 100%;
+   height: 20px;
+   line-height: 20px;
+    color: #b0b0b0;
+   font-size: 14px;
+    font-weight: 400;
+   text-align:center;
+   margin-bottom: 8px;
+ }
+ .J_brickBd .bd_4 .review_waper:hover {
+  cursor: pointer;
+  overflow: visible;
+  height: 0px;
+  transition: all 1s linear .2s;
+   opacity:1;
+  bottom: 0px;
+ }
+.J_brickBd .bd_5{
+  width: 234px;
+  height: 300px;
+  float: left;
+  background: #fff;
+   transition: all .2s linear;
+  transform: translate3d(0, -2px, 0);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+  margin-left: 10px;
+   margin-bottom: 14px;
+  /*border: 1px solid purple;*/
+}
+.J_brickBd .bd_5 img{
+  width: 150px;
+  height: 150px;
+  display: block;
+  padding: 20px 42px;
+}
+.bd_5 .xiaomi{
+   width: 100%;
+   height: 20px;
+   color: #333;
+   font-size: 14px;
+    font-weight: 400;
+   line-height: 20px;
+   margin-bottom: 8px;
+   text-align:center;
+ }
+ .bd_5 .prive{
+   width: 100%;
+   height: 20px;
+   line-height: 20px;
+    color: #ff6700;
+   font-size: 14px;
+    font-weight: 400;
+   margin-bottom: 18px;
+   text-align:center;
+ }
+ .bd_5 .rivek{
+   width: 100%;
+   height: 20px;
+   line-height: 20px;
+    color: #b0b0b0;
+   font-size: 14px;
+    font-weight: 400;
+   text-align:center;
+   margin-bottom: 8px;
+ }
+ .J_brickBd .bd_6{
+  width: 234px;
+  height: 300px;
+  /*float: left;*/
+  position: absolute;
+  top: 314px;
+  left: 0;
+   transition: all .2s linear;
+  transform: translate3d(0, -2px, 0);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+  /*border: 1px solid purple;*/
+}
+.J_brickBd .bd_6 img{
+   width: 234px;
+  height: 300px;
+}
+.J_brickBd .bd_7{
+  width: 234px;
+  height: 300px;
+  /*float: left;*/
+  position: absolute;
+  top: 314px;
+  left: 234px;
+  background: #fff;
+   transition: all .2s linear;
+  transform: translate3d(0, -2px, 0);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+  margin-left: 10px;
+  margin-bottom: 14px;
+  /*border: 1px solid purple;*/
+}
+.J_brickBd .bd_7 img{
+  width: 150px;
+  height: 150px;
+  display: block;
+  padding: 20px 42px;
+
+}
+ .bd_7 .xiaomi{
+   width: 100%;
+   height: 20px;
+   color: #333;
+   font-size: 14px;
+    font-weight: 400;
+   line-height: 20px;
+   margin-bottom: 8px;
+   text-align:center;
+ }
+ .bd_7 .prive{
+   width: 100%;
+   height: 20px;
+   line-height: 20px;
+    color: #ff6700;
+   font-size: 14px;
+    font-weight: 400;
+   margin-bottom: 18px;
+   text-align:center;
+ }
+ .bd_7 .rivek{
+   width: 100%;
+   height: 20px;
+   line-height: 20px;
+    color: #b0b0b0;
+   font-size: 14px;
+    font-weight: 400;
+   text-align:center;
+   margin-bottom: 8px;
+ }
+.J_brickBd .bd_8{
+  width: 234px;
+  height: 300px;
+  /*float: left;*/
+   position: absolute;
+  top: 314px;
+  left: 479px;
+  background: #fff;
+   transition: all .2s linear;
+  transform: translate3d(0, -2px, 0);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+   margin-left: 10px;
+   margin-bottom: 14px;
+  /*border: 1px solid purple;*/
+}
+.J_brickBd .bd_8 img{
+  width: 150px;
+  height: 150px;
+  display: block;
+  padding: 20px 42px;
+}
+.bd_8 .xiaomi{
+   width: 100%;
+   height: 20px;
+   color: #333;
+   font-size: 14px;
+    font-weight: 400;
+   line-height: 20px;
+   margin-bottom: 8px;
+   text-align:center;
+ }
+ .bd_8 .prive{
+   width: 100%;
+   height: 20px;
+   line-height: 20px;
+    color: #ff6700;
+   font-size: 14px;
+    font-weight: 400;
+   margin-bottom: 18px;
+   text-align:center;
+ }
+ .bd_8 .rivek{
+   width: 100%;
+   height: 20px;
+   line-height: 20px;
+    color: #b0b0b0;
+   font-size: 14px;
+    font-weight: 400;
+   text-align:center;
+   margin-bottom: 8px;
+ }
+.J_brickBd .bd_9{
+  width: 234px;
+  height: 300px;
+  /*float: left;*/
+  position: absolute;
+  top: 314px;
+  left: 723px;
+  background: #fff;
+   transition: all .2s linear;
+  transform: translate3d(0, -2px, 0);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+   margin-left: 10px;
+   margin-bottom: 14px;
+  /*border: 1px solid purple;*/
+}
+.J_brickBd .bd_9 img{
+  width: 150px;
+  height: 150px;
+  display: block;
+  padding: 20px 42px;
+
+}
+.bd_9 .xiaomi{
+   width: 100%;
+   height: 20px;
+   color: #333;
+   font-size: 14px;
+    font-weight: 400;
+   line-height: 20px;
+   margin-bottom: 8px;
+   text-align:center;
+ }
+ .bd_9 .prive{
+   width: 100%;
+   height: 20px;
+   line-height: 20px;
+    color: #ff6700;
+   font-size: 14px;
+    font-weight: 400;
+   margin-bottom: 18px;
+   text-align:center;
+ }
+ .bd_9 .rivek{
+   width: 100%;
+   height: 20px;
+   line-height: 20px;
+    color: #b0b0b0;
+   font-size: 14px;
+    font-weight: 400;
+   text-align:center;
+   margin-bottom: 8px;
+ }
+ .J_brickBd .bd_9 .review_waper:hover {
+  cursor: pointer;
+  overflow: visible;
+  height: 0px;
+  transition: all 1s linear .2s;
+   opacity:1;
+  bottom: 0px;
+ }
+ .J_brickBd .bd_10{
+  width: 234px;
+  height: 300px;
+  /*float: left;*/
+  position: absolute;
+  top: 314px;
+  left: 967px;
+  /*background: #fff;*/
+   transition: all .2s linear;
+  transform: translate3d(0, -2px, 0);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+   margin-left: 10px;
+   margin-bottom: 14px;
+  /*border: 1px solid purple;*/
+}
+.fotr_1{
+  width: 234px;
+  height: 143px;
+   /*border: 1px solid cyan;*/
+   background: #fff;
+   float: left;
+    transition: all .2s linear;
+  transform: translate3d(0, -2px, 0);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+   margin-bottom: 14px;
+}
+.fotr_1 img{
+  display: block;
+  margin-top:32px;
+  margin-left:130px;
+}
+.fotr_1 .xiaomi{
+   width: 104px;
+   height: 20px;
+   color: #333;
+  padding-left: 20px;
+   font-size: 14px;
+    font-weight: 400;
+   line-height: 20px;
+   /*padding-bottom: 10px;*/
+   margin-top: -70px;
+   text-align:center;
+   /*margin: 0;*/
+   overflow: hidden;
+ }
+ .fotr_1 .prive{
+   width: 94px;
+   height: 20px;
+   line-height: 20px;
+    color: #ff6700;
+   font-size: 14px;
+   padding-left: 20px;
+    font-weight: 400;
+   margin-bottom: 18px;
+   text-align:center;
+ }
+.fotr_2{
+  width: 234px;
+  height: 143px;
+   /*border: 1px solid rgb(255,255,255);*/
+    transition: all .2s linear;
+    float: left;
+    background: #fff;
+  transform: translate3d(0, -2px, 0);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+   margin-bottom: 14px;
+}
+.fotr_2 img{
+  display: block;
+  margin-top:48px;
+  margin-left:145px;
+}
+.fotr_2 .xiaomi{
+   width: 104px;
+   height: 20px;
+   color: #333;
+  padding-left: 20px;
+   font-size: 14px;
+    font-weight: 400;
+   line-height: 20px;
+   /*padding-bottom: 10px;*/
+   margin-top: -50px;
+   text-align:center;
+   /*margin: 0;*/
+   overflow: hidden;
+ }
+ .fotr_2 .prive{
+   width: 94px;
+   height: 20px;
+   line-height: 20px;
+    color: #ff6700;
+   font-size: 14px;
+   padding-left: 20px;
+    font-weight: 400;
+   margin-bottom: 18px;
+   text-align:center;
+ }
+ .J_brickBd .bd_1:hover{
+  z-index: 2;
+    box-shadow: 0px 5px 10px #d5d5d5;
+    margin-top: -3px;
+    cursor: pointer;
+ }
+ .J_brickBd .bd_2:hover{
+  z-index: 2;
+    box-shadow: 0px 5px 10px #d5d5d5;
+    margin-top: -3px;
+    cursor: pointer;
+ }
+ .J_brickBd .bd_3:hover{
+  z-index: 2;
+    box-shadow: 0px 5px 10px #d5d5d5;
+    margin-top: -3px;
+    cursor: pointer;
+ }
+ .J_brickBd .bd_4:hover{
+  z-index: 2;
+    box-shadow: 0px 5px 10px #d5d5d5;
+    margin-top: -3px;
+    cursor: pointer;
+ }
+ .J_brickBd .bd_5:hover{
+  z-index: 2;
+    box-shadow: 0px 5px 10px #d5d5d5;
+    margin-top: -3px;
+    cursor: pointer;
+ }
+ .J_brickBd .bd_6:hover{
+  z-index: 2;
+    box-shadow: 0px 5px 10px #d5d5d5;
+    margin-top: -3px;
+    cursor: pointer;
+ }
+ .J_brickBd .bd_7:hover{
+  z-index: 2;
+    box-shadow: 0px 5px 10px #d5d5d5;
+    margin-top: -3px;
+    cursor: pointer;
+ }
+ .J_brickBd .bd_8:hover{
+  z-index: 2;
+    box-shadow: 0px 5px 10px #d5d5d5;
+    margin-top: -3px;
+    cursor: pointer;
+ }
+ .J_brickBd .bd_9:hover{
+  z-index: 2;
+    box-shadow: 0px 5px 10px #d5d5d5;
+    margin-top: -3px;
+    cursor: pointer;
+ }
+ .J_brickBd .fotr_1:hover{
+  z-index: 2;
+    box-shadow: 0px 5px 10px #d5d5d5;
+    margin-top: -3px;
+    cursor: pointer;
+ }
+ .J_brickBd .fotr_2:hover{
+  z-index: 2;
+    box-shadow: 0px 5px 10px #d5d5d5;
+    margin-top: -3px;
+    cursor: pointer;
+ }
+ /*配件栏*/
+ .J_brickBd .bd_11{
+  width: 234px;
+  height: 300px;
+  float: left;
+   transition: all .2s linear;
+  transform: translate3d(0, -2px, 0);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+  /*border: 1px solid purple;*/
+}
+.J_brickBd .bd_11 img{
+   width: 234px;
+  height: 300px;
+}
+.ferte_me{
+  position: absolute;
+    top: 0;
+    left: 50%;
+    z-index: 2;
+    width: 64px;
+    height: 20px;
+    margin-left: -32px;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    color: #fff;
+  background-color: #e53935;
+}
+.J_brickBd .bd_12{
+  width: 234px;
+  height: 300px;
+  float: left;
+  background: #fff;
+   transition: all .2s linear;
+  transform: translate3d(0, -2px, 0);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+  margin-left: 10px;
+  margin-bottom: 14px;
+  /*border: 1px solid purple;*/
+}
+.J_brickBd .bd_12 img{
+  width: 150px;
+  height: 150px;
+  display: block;
+  padding: 20px 42px;
+}
+ .bd_12 .xiaomi{
+   width: 100%;
+   height: 20px;
+   color: #333;
+   font-size: 14px;
+    font-weight: 400;
+   line-height: 20px;
+   margin-bottom: 8px;
+   text-align:center;
+ }
+ .bd_12 .prive{
+   width: 100%;
+   height: 20px;
+   line-height: 20px;
+    color: #ff6700;
+   font-size: 14px;
+    font-weight: 400;
+   margin-bottom: 18px;
+   text-align:center;
+ }
+ .bd_12 .rivek{
+   width: 100%;
+   height: 20px;
+   line-height: 20px;
+    color: #b0b0b0;
+   font-size: 14px;
+    font-weight: 400;
+   text-align:center;
+   margin-bottom: 8px;
+ }
+ .J_brickBd .bd_12 .review_waper:hover {
+  cursor: pointer;
+  overflow: visible;
+  height: 0px;
+  transition: all 1s linear .2s;
+   opacity:1;
+  bottom: 0px;
+ }
+.J_brickBd .bd_13{
+  width: 234px;
+  height: 300px;
+  float: left;
+  background: #fff;
+   transition: all .2s linear;
+  transform: translate3d(0, -2px, 0);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+   margin-left: 10px;
+   margin-bottom: 14px;
+  /*border: 1px solid purple;*/
+}
+.J_brickBd .bd_13 img{
+  width: 150px;
+  height: 150px;
+  display: block;
+  padding: 20px 42px;
+}
+.bd_13 .xiaomi{
+   width: 100%;
+   height: 20px;
+   color: #333;
+   font-size: 14px;
+    font-weight: 400;
+   line-height: 20px;
+   margin-bottom: 8px;
+   text-align:center;
+ }
+ .bd_13 .prive{
+   width: 100%;
+   height: 20px;
+   line-height: 20px;
+    color: #ff6700;
+   font-size: 14px;
+    font-weight: 400;
+   margin-bottom: 18px;
+   text-align:center;
+ }
+ .bd_13 .rivek{
+   width: 100%;
+   height: 20px;
+   line-height: 20px;
+    color: #b0b0b0;
+   font-size: 14px;
+    font-weight: 400;
+   text-align:center;
+   margin-bottom: 8px;
+ }
+  .J_brickBd .bd_13 .review_waper:hover {
+  cursor: pointer;
+  overflow: visible;
+  height: 0px;
+  transition: all 1s linear .2s;
+   opacity:1;
+  bottom: 0px;
+ }
+.J_brickBd .bd_14{
+  width: 234px;
+  height: 300px;
+  float: left;
+  background: #fff;
+   transition: all .2s linear;
+  transform: translate3d(0, -2px, 0);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+   margin-left: 10px;
+   margin-bottom: 14px;
+  /*border: 1px solid purple;*/
+}
+.J_brickBd .bd_14 img{
+  width: 150px;
+  height: 150px;
+  display: block;
+  padding: 20px 42px;
+}
+.bd_14 .xiaomi{
+   width: 100%;
+   height: 20px;
+   color: #333;
+   font-size: 14px;
+    font-weight: 400;
+   line-height: 20px;
+   margin-bottom: 8px;
+   text-align:center;
+ }
+ .bd_14 .prive{
+   width: 100%;
+   height: 20px;
+   line-height: 20px;
+    color: #ff6700;
+   font-size: 14px;
+    font-weight: 400;
+   margin-bottom: 18px;
+   text-align:center;
+ }
+ .bd_14 .rivek{
+   width: 100%;
+   height: 20px;
+   line-height: 20px;
+    color: #b0b0b0;
+   font-size: 14px;
+    font-weight: 400;
+   text-align:center;
+   margin-bottom: 8px;
+ }
+ .J_brickBd .bd_14 .review_waper:hover {
+  cursor: pointer;
+  overflow: visible;
+  height: 0px;
+  transition: all 1s linear .2s;
+   opacity:1;
+  bottom: 0px;
+ }
+.J_brickBd .bd_15{
+  width: 234px;
+  height: 300px;
+  float: left;
+  background: #fff;
+   transition: all .2s linear;
+  transform: translate3d(0, -2px, 0);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+  margin-left: 10px;
+   margin-bottom: 14px;
+  /*border: 1px solid purple;*/
+}
+.J_brickBd .bd_15 img{
+  width: 150px;
+  height: 150px;
+  display: block;
+  padding: 20px 42px;
+}
+.bd_15 .xiaomi{
+   width: 100%;
+   height: 20px;
+   color: #333;
+   font-size: 14px;
+    font-weight: 400;
+   line-height: 20px;
+   margin-bottom: 8px;
+   text-align:center;
+ }
+ .bd_15 .prive{
+   width: 100%;
+   height: 20px;
+   line-height: 20px;
+    color: #ff6700;
+   font-size: 14px;
+    font-weight: 400;
+   margin-bottom: 18px;
+   text-align:center;
+ }
+ .bd_15 .rivek{
+   width: 100%;
+   height: 20px;
+   line-height: 20px;
+    color: #b0b0b0;
+   font-size: 14px;
+    font-weight: 400;
+   text-align:center;
+   margin-bottom: 8px;
+ }
+  .J_brickBd .bd_15 .review_waper:hover {
+  cursor: pointer;
+  overflow: visible;
+  height: 0px;
+  transition: all 1s linear .2s;
+   opacity:1;
+  bottom: 0px;
+ }
+ .J_brickBd .bd_16{
+  width: 234px;
+  height: 300px;
+  /*float: left;*/
+  position: absolute;
+  top: 314px;
+  left: 0;
+   transition: all .2s linear;
+  transform: translate3d(0, -2px, 0);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+  /*border: 1px solid purple;*/
+}
+.J_brickBd .bd_16 img{
+   width: 234px;
+  height: 300px;
+}
+.J_brickBd .bd_17{
+  width: 234px;
+  height: 300px;
+  /*float: left;*/
+  position: absolute;
+  top: 314px;
+  left: 234px;
+  background: #fff;
+   transition: all .2s linear;
+  transform: translate3d(0, -2px, 0);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+  margin-left: 10px;
+  margin-bottom: 14px;
+  /*border: 1px solid purple;*/
+}
+.J_brickBd .bd_17 img{
+  width: 150px;
+  height: 150px;
+  display: block;
+  padding: 20px 42px;
+}
+ .bd_17 .xiaomi{
+   width: 100%;
+   height: 20px;
+   color: #333;
+   font-size: 14px;
+    font-weight: 400;
+   line-height: 20px;
+   margin-bottom: 8px;
+   text-align:center;
+ }
+ .bd_17 .prive{
+   width: 100%;
+   height: 20px;
+   line-height: 20px;
+    color: #ff6700;
+   font-size: 14px;
+    font-weight: 400;
+   margin-bottom: 18px;
+   text-align:center;
+ }
+ .bd_17 .rivek{
+   width: 100%;
+   height: 20px;
+   line-height: 20px;
+    color: #b0b0b0;
+   font-size: 14px;
+    font-weight: 400;
+   text-align:center;
+   margin-bottom: 8px;
+ }
+  .J_brickBd .bd_17 .review_waper:hover {
+  cursor: pointer;
+  overflow: visible;
+  height: 0px;
+  transition: all 1s linear .2s;
+   opacity:1;
+  bottom: 0px;
+ }
+  .J_brickBd .bd_18{
+  width: 234px;
+  height: 300px;
+  /*float: left;*/
+   position: absolute;
+  top: 314px;
+  left: 478px;
+  background: #fff;
+   transition: all .2s linear;
+  transform: translate3d(0, -2px, 0);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+   margin-left: 10px;
+   margin-bottom: 14px;
+  /*border: 1px solid purple;*/
+}
+.J_brickBd .bd_18 img{
+  width: 150px;
+  height: 150px;
+  display: block;
+  padding: 20px 42px;
+}
+.bd_18 .xiaomi{
+   width: 100%;
+   height: 20px;
+   color: #333;
+   font-size: 14px;
+    font-weight: 400;
+   line-height: 20px;
+   margin-bottom: 8px;
+   text-align:center;
+ }
+ .bd_18 .prive{
+   width: 100%;
+   height: 20px;
+   line-height: 20px;
+    color: #ff6700;
+   font-size: 14px;
+    font-weight: 400;
+   margin-bottom: 18px;
+   text-align:center;
+ }
+ .bd_18 .rivek{
+   width: 100%;
+   height: 20px;
+   line-height: 20px;
+    color: #b0b0b0;
+   font-size: 14px;
+    font-weight: 400;
+   text-align:center;
+   margin-bottom: 8px;
+ }
+  .J_brickBd .bd_18 .review_waper:hover {
+  cursor: pointer;
+  overflow: visible;
+  height: 0px;
+  transition: all 1s linear .2s;
+   opacity:1;
+  bottom: 0px;
+ }
+.J_brickBd .bd_19{
+  width: 234px;
+  height: 300px;
+  /*float: left;*/
+  position: absolute;
+  top: 314px;
+  left: 722px;
+  background: #fff;
+   transition: all .2s linear;
+  transform: translate3d(0, -2px, 0);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+   margin-left: 10px;
+   margin-bottom: 14px;
+  /*border: 1px solid purple;*/
+}
+.J_brickBd .bd_19 img{
+  width: 150px;
+  height: 150px;
+  display: block;
+  padding: 20px 42px;
+}
+.bd_19 .xiaomi{
+   width: 100%;
+   height: 20px;
+   color: #333;
+   font-size: 14px;
+    font-weight: 400;
+   line-height: 20px;
+   margin-bottom: 8px;
+   text-align:center;
+ }
+ .bd_19 .prive{
+   width: 100%;
+   height: 20px;
+   line-height: 20px;
+    color: #ff6700;
+   font-size: 14px;
+    font-weight: 400;
+   margin-bottom: 18px;
+   text-align:center;
+ }
+ .bd_19 .rivek{
+   width: 100%;
+   height: 20px;
+   line-height: 20px;
+    color: #b0b0b0;
+   font-size: 14px;
+    font-weight: 400;
+   text-align:center;
+   margin-bottom: 8px;
+ }
+ .J_brickBd .bd_19 .review_waper:hover {
+  cursor: pointer;
+  overflow: visible;
+  height: 0px;
+  transition: all 1s linear .2s;
+   opacity:1;
+  bottom: 0px;
+ }
+ /*==============*/
+ .J_brickBd .bd_11:hover{
+  z-index: 2;
+    box-shadow: 0px 5px 10px #d5d5d5;
+    margin-top: -3px;
+    cursor: pointer;
+ }
+ .J_brickBd .bd_12:hover{
+  z-index: 2;
+    box-shadow: 0px 5px 10px #d5d5d5;
+    margin-top: -3px;
+    cursor: pointer;
+ }
+ .J_brickBd .bd_13:hover{
+  z-index: 2;
+    box-shadow: 0px 5px 10px #d5d5d5;
+    margin-top: -3px;
+    cursor: pointer;
+ }
+ .J_brickBd .bd_14:hover{
+  z-index: 2;
+    box-shadow: 0px 5px 10px #d5d5d5;
+    margin-top: -3px;
+    cursor: pointer;
+ }
+ .J_brickBd .bd_15:hover{
+  z-index: 2;
+    box-shadow: 0px 5px 10px #d5d5d5;
+    margin-top: -3px;
+    cursor: pointer;
+ }
+ .J_brickBd .bd_16:hover{
+  z-index: 2;
+    box-shadow: 0px 5px 10px #d5d5d5;
+    margin-top: -3px;
+    cursor: pointer;
+ }
+ .J_brickBd .bd_17:hover{
+  z-index: 2;
+    box-shadow: 0px 5px 10px #d5d5d5;
+    margin-top: -3px;
+    cursor: pointer;
+ }
+ .J_brickBd .bd_18:hover{
+  z-index: 2;
+    box-shadow: 0px 5px 10px #d5d5d5;
+    margin-top: -3px;
+    cursor: pointer;
+ }
+ .J_brickBd .bd_19:hover{
+  z-index: 2;
+    box-shadow: 0px 5px 10px #d5d5d5;
+    margin-top: -3px;
+    cursor: pointer;
+ }
+ .J_brickNav{
+  width: 320px;
+  height: 42px;
+  float: right;
+  margin-top: -48px;
+  /*border: 1px solid red;*/
+}
+ .J_brickNav .tab-list_1{
+  width: 320px;
+  height: 40px;
+  /*float: right;*/
+}
+.J_brickNav .tab-list_1 li{
+  float: left;
+  /*height: 18px;*/
+  line-height: 40px;
+  margin-right: 24px;
+}
+.J_brickNav li:hover{
+     color: #ff6700;
+     /*height: 42px;*/
+    border-bottom: 2px solid #ff6700;
+    cursor: pointer;
+}
+.ferte_meter{
+  position: absolute;
+    top: 0;
+    left: 50%;
+    z-index: 2;
+    width: 64px;
+    height: 20px;
+    margin-left: -32px;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    color: #fff;
+      background-color: #83c44e;
+}
+/*================================*/
+.box-wanter{
+  width: 1226px;
+  height: 58px;
+  margin-top: 20px;
+  margin-left:auto;
+  margin-right: auto;
+  /*border: 1px solid green;*/
+  position: relative;
+}
+.box-wanter .home{
+  width: 100%;
+  height: 58px;
+  line-height: 58px;
+  font-size: 22px;
+  font-weight: 200;
+  color: #333;
+}
+.home_jk{
+  width: 60px;
+  height: 19px;
+ border: 1px solid #e0e0e0;
+ padding: 3px 5px;
+  margin-top: -42px;
+  float: right;
+  background: rgb(245,245,245);
+}
+.home_jk .jk_1{
+  width: 36px;
+  height: 24px;
+  line-height: 24px;
+  background: #e0e0e0;
+ /* border-right: 1px solid #e0e0e0;*/
+  text-align: center;
+}
+.home_jk .jk_1 img{
+  display: block;
+   float: left;
+  margin-top: -2px;
+  margin-left: -3px;
+}
+.jk_2{
+   width: 36px;
+  height: 24px;
+  line-height: 24px;
+  background: #e0e0e0;
+  transition: color .5s;
+  background: rgb(245,245,245);
+  text-align: center;
+}
+.home_jk:hover{
+ background: url("images/xiangyouzou_hover.png")no-repeat 0 center;
+ cursor: pointer;
+}
+.home_jk .jk_2 img{
+  display: block;
+   position: absolute;
+   top: 18px;
+   right: 0;
+}
+.div_homen{
+    width: 1226px;
+    height: 300px;
+    /*border: 1px solid purple;*/
+}
+.div_homen ul{
+  width: 100%;
+  height: 100%;
+  /*padding:20px 20px 15px 20px;*/
+  /*float: left;*/
+}
+.div_homen li{
+  width: 234px;
+  height: 300px;
+  float: left;
+  background-color: #fff;
+   /*border: 1px solid #000;*/
+   transition: all 0.2s linear;
+  margin: 0px 11px 10px 0px;
+}
+.div_homen li img{
+   width: 140px;
+   height: 140px;
+   vertical-align: middle;
+   padding: 20px 47px;
+   display: block;
+}
+.div_homen  .homen_1{
+   width: 160px;
+   height: 20px;
+   line-height: 20px;
+   color: #333;
+   text-align: center;
+   margin-bottom: 10px;
+   font-size: 14px;
+   overflow: hidden;
+   font-weight: 200;
+   margin-left: auto;
+   margin-right: auto;
+}
+.div_homen  .homen_2{
+   width: 160px;
+   height: 20px;
+   line-height: 20px;
+   color: #333;
+  text-align: center;
+  padding-left:34px;
+   margin-bottom: 10px;
+   font-size: 14px;
+   color: #ff6700;
+   font-weight: 200;
+}
+.div_homen  .homen_3{
+   width: 160px;
+   height: 20px;
+   line-height: 20px;
+   color: #757575;
+   text-align: center;
+   margin-bottom: 10px;
+    padding-left:34px;
+   font-size: 14px;
+   font-weight: 200;
+   text-overflow: ellipsis;
+   white-space: nowrap;
+    overflow: hidden;
+}
+.div_homen li:hover{
+  transform: translate3d(0, -2px, 0);
+  z-index: 2;
+  cursor: pointer;
+}
+.box_form{
+  width: 1226px;
+  height: 58px;
+  /*border: 1px solid red;*/
+  margin: auto;
+  margin-top: 40px;
+}
+.box_form .work_re{
+ width: 100%;
+  height: 58px;
+  line-height: 58px;
+  font-size: 22px;
+  font-weight: 200;
+  color: #333;
+}
+.work_fix{
+  width: 1226px;
+  height: 415px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  /*border: 1px solid cyan;*/
+}
+ .work_fix ul{
+  width: 100%;
+  height: 415px;
+  margin: 0 auto;
+ }
+ .work_fix li{
+  width: 296px;
+  height: 415px;
+  float: left;
+  transition: all .2s linear;
+  margin-right: 10px;
+  background: #fff;
+  /*border: 1px solid blue;*/
+ }
+ .work_fix li:hover{
+    z-index: 2;
+    cursor: pointer;
+    -webkit-box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+    -webkit-transform: translate3d(0, -2px, 0);
+}
+ .work_fix li a{
+  width: 296px;
+  height: 200px;
+ }
+ .work_fix li a img{
+   width: 296px;
+  height: 200px;
+ }
+ .work_fix .fix_1{
+  width: 240px;
+  height: 72px;
+  margin: 0 28px 22px;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  overflow: hidden;
+ }
+ .work_fix .fix_2{
+  width: 230px;
+  height: 18px;
+  line-height: 18px;
+  margin-bottom: 15px;
+  padding: 0 10px 0 25px;
+  font-size: 12px;
+  color: #b0b0b0;
+ }
+ .work_fix .fix_3{
+   width: 236px;
+   height: 22px;
+   line-height: 22px;
+   margin: 0 30px;
+   white-space: nowrap;
+    overflow: hidden;
+ }
+ .fix_3 h3{
+  display: inline-block;
+    margin: 0;
+    font-size: 16px;
+    font-weight: 400;
+    max-width: 170px;
+    overflow: hidden;
+    margin-right: 5px;
+    vertical-align: bottom;
+    color: #333;
+ }
+ .fix_3 .sep{
+  color: #e0e0e0;
+  margin-right: 5px;
+  display:inline-block;
+ }
+ .fix_3 .price{
+  display: inline;
+  color: #ff6700;
+ }
+ .work_mei{
+  width: 1226px;
+  height: 58px;
+ 
+  margin: auto;
+ 
+ }
+ .work_metao{
+   width: 1226px;
+  height: 58px;
+  line-height: 58px;
+  font-size: 22px;
+  font-weight: 200;
+  color: #333;
+ }
+ .work_remf{
+  width: 1226px;
+  height: 420px;
+  margin:  0 auto;
+  position: relative;
+  /*border: 1px solid red;*/
+ }
+ .work_remf .medews{
+  width: 1226px;
+  height: 420px;
+  /*float: left;*/
+  
+ }
+ .work_remf .medews li{
+  width: 296px;
+  height: 375px;
+  float: left;
+  background: #fff;
+  padding-top: 45px;
+  margin-right: 10px;
+  transition: all .2s linear;
+  /*border: 1px solid blue;*/
+  }
+ .work_remf .medews li a{
+   width: 216px;
+  height: 154px;
+  display: block;
+
+  /*border: 1px solid purple;*/
+  position: absolute;
+ top: 190px;
+ /*left: 40px;*/
+ margin-left: 40px;
+ }
+ .work_remf .medews li a img{
+  width: 216px;
+  height: 154px;
+ }
+ 
+ .medews .mede_1{
+  width: 100%;
+  height: 24px;
+  line-height: 24px;
+  /*margin: 0 10px 10px;*/
+  font-size: 16px;
+  font-weight: 400;
+  color: #ffac13;
+  text-align: center;
+ }
+ .medews .mede_2{
+   width: 100%;
+  height: 25px;
+  display: block;
+  font-size: 18px;
+  line-height: 25px;
+  /*margin: 0px 30px;*/
+  text-align: center;
+  overflow: hidden;
+ }
+ .medews .mede_3{
+    width:100%;
+  height:25px;
+  line-height: 25px;
+  text-align: center;
+  font-size: 14px;
+  color: #b0b0b0;
+  overflow: hidden;
+  display: block;
+ }
+ .medews .mede_4{
+  width:100%;
+  height:25px;
+  line-height: 25px;
+  text-align: center;
+  color: #b0b0b0;
+  /*overflow: hidden;*/
+   font-size: 12px;
+  display: block;
+ }
+ .medews .mede_5{
+   width:100%;
+  height:25px;
+  line-height: 25px;
+  color: #333;
+  text-align: center;
+  /*overflow: hidden;*/
+  display: block;
+ }
+ .medews .mede_6{
+   width:100%;
+  height:25px;
+  line-height: 25px;
+  color: #333;
+  margin-top: 30px;
+  text-align: center;
+  /*overflow: hidden;*/
+  display: block;
+ }
+ .medews .mede_f{
+   width:100%;
+  height:25px;
+  line-height: 25px;
+   color: #83c44e;
+  font-size: 16px;
+  text-align: center;
+  /*overflow: hidden;*/
+  display: block;
+ }
+ .medews .mede_u{
+   width:100%;
+  height:25px;
+  line-height: 25px;
+  color: #e53935;
+  font-size: 16px;
+  text-align: center;
+  /*overflow: hidden;*/
+  display: block;
+ }
+ .medews .mede_n{
+   width:100%;
+  height:25px;
+  line-height: 25px;
+  color: #2196f3;
+  font-size: 16px;
+  text-align: center;
+  /*overflow: hidden;*/
+  display: block;
+ }
+ .medews .border_1{
+  border-top-width: 1px;
+  border-top-style: solid;
+   border-top-color: #ffac13;
+ }
+ .medews .border_2{
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: #83c44e;
+
+ }
+ .medews li:hover {
+   /* z-index: 2;*/
+   cursor: pointer;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+    /*transform: translate3d(2px, -2px, 2px);*/
+}
+ .medews .border_3{
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: #e53935;
+ }
+ .medews .border_4{
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: #2196f3;
+ }
+ .xm-pagers {
+  width: 160px;
+  height: 10px;
+  line-height: 10px;
+  position: absolute;
+  padding: 5px 0px 5px 35px;
+  bottom: 15px;
+  text-align: center;
+  left: 60px;
+ }
+.xm-pagers div{
+   width:10px;
+  height: 10px;
+  display: block;
+  float: left;
+  margin-right:20px;
+  border: 2px solid #f5f5f5;
+  border-radius: 10px;
+ /* position: absolute;
+   z-index: 2;*/
+  text-align: center;
+  overflow: hidden;
+  background-color: #b0b0b0;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+.xm-pagers .xm_der_3{
+  border-color: #ff6700;
+   background: #ff6700;
+  background-color: transparent;
+}
+.xm-pagers:hover div{
+    background: #ff6700;
+    cursor: pointer;
+}  
+
+/**/
+
+  .xm-pagers_1 {
+  width: 160px;
+  height: 10px;
+  line-height: 10px;
+  position: absolute;
+  padding: 5px 0px 5px 35px;
+  bottom: 15px;
+  text-align: center;
+  left: 370px;
+ }
+.xm-pagers_1 div{
+   width:10px;
+  height: 10px;
+  display: block;
+  float: left;
+  margin-right:20px;
+  border: 2px solid #f5f5f5;
+  border-radius: 10px;
+  text-align: center;
+  overflow: hidden;
+  background-color: #b0b0b0;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+.xm-pagers_1 .xm_der_3{
+  border-color: #ff6700;
+   background: #ff6700;
+  background-color: transparent;
+}
+.xm-pagers_1:hover div{
+    background: #ff6700;
+    cursor: pointer;
+}
+/**/
+
+.xm-pagers_2 {
+  width: 160px;
+  height: 10px;
+  line-height: 10px;
+  position: absolute;
+  padding: 5px 0px 5px 35px;
+  bottom: 15px;
+  text-align: center;
+  left: 670px;
+ }
+.xm-pagers_2 div{
+   width:10px;
+  height: 10px;
+  display: block;
+  float: left;
+  margin-right:20px;
+  border: 2px solid #f5f5f5;
+  border-radius: 10px;
+  text-align: center;
+  overflow: hidden;
+  background-color: #b0b0b0;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+.xm-pagers_2 .xm_der_3{
+  border-color: #ff6700;
+   background: #ff6700;
+  background-color: transparent;
+}
+.xm-pagers_2:hover div{
+    background: #ff6700;
+    cursor: pointer;
+}
+/**/
+
+.xm-pagers_3 {
+  width: 160px;
+  height: 10px;
+  line-height: 10px;
+  position: absolute;
+  padding: 5px 0px 5px 35px;
+  bottom: 15px;
+  text-align: center;
+  left: 970px;
+ }
+.xm-pagers_3 div{
+   width:10px;
+  height: 10px;
+  display: block;
+  float: left;
+  margin-right:20px;
+  border: 2px solid #f5f5f5;
+  border-radius: 10px;
+  text-align: center;
+  overflow: hidden;
+  background-color: #b0b0b0;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+.xm-pagers_3 .xm_der_3{
+  border-color: #ff6700;
+   background: #ff6700;
+  background-color: transparent;
+}
+.xm-pagers_3:hover div{
+    background: #ff6700;
+    cursor: pointer;
+}
+.boacker_er{
+  width: 1226px;
+  height: 58px;
+  margin: auto;
+  margin-top: 20px;
+  /*border:  1px solid red;*/
+}
+.boacker_er .aut_er{
+  font-size: 22px;
+  font-weight: 200;
+  float: left;
+  line-height: 58px;
+  color: #333;
+}
+
+.boacker_er .aur_e{
+   width: 92px;
+  height:58px; 
+  float: right;
+   background: url("images/chakanquanbu.png")no-repeat 0 center;
+}
+.boacker_er .aur_e img{
+  width: 92px;
+  height: 17px;
+ /*display: block;*/
+}
+.boacker_er .aur_e:hover{
+  cursor: pointer;
+  z-index: 2;
+  background: url("images/chakanquanbu_hover.png") no-repeat 0 center;
+}
+      
+.bomber_ker{
+  width: 1240px;
+  height: 285px;
+  /*border: 1px solid red;*/
+  position: relative;
+   margin: 0 auto;
+}
+.bomber_ker ul{
+  height: 285px;
+  /*border: 1px solid red;*/
+   margin: 0 auto;*/
+}
+.bomber_ker li{
+  width: 296px;
+  height: 285px;
+  float: left;
+  margin-right: 12px;
+  margin-bottom: 14px;
+  background: #fff;
+  transition: all .2s linear;
+  /*box-shadow: 0 15px 30px rgba(0,0,0,0.1);*/
+  transform: translate3d(0, -2px, 0);
+  /*border: 1px solid blue;*/
+}
+.bomber_ker .kermet_1{
+  width: 296px;
+  height: 285px;
+  float: left;
+  margin-right: 12px;
+  background: #fff;
+  transition: all .2s linear;
+  /*box-shadow: 0 15px 30px rgba(0,0,0,0.1);*/
+  transform: translate3d(0, -2px, 0);
+  /*border: 1px solid blue;*/
+}
+.bomber_ker .kermet_2{
+  width: 296px;
+  height: 285px;
+  float: left;
+  margin-right: 12px;
+  background: #fff;
+  transition: all .2s linear;
+  /*box-shadow: 0 15px 30px rgba(0,0,0,0.1);*/
+  transform: translate3d(0, -2px, 0);
+  /*border: 1px solid blue;*/
+}
+.bomber_ker .kermet_3{
+  width: 296px;
+  height: 285px;
+  float: left;
+  margin-right: 12px;
+  background: #fff;
+  transition: all .2s linear;
+  /*box-shadow: 0 15px 30px rgba(0,0,0,0.1);*/
+  transform: translate3d(0, -2px, 0);
+  /*border: 1px solid blue;*/
+}
+.bomber_ker ul li a{
+  width: 296px;
+  height: 180px;
+  display: block;
+}
+.bomber_ker .play{
+  position: absolute;
+  left: 20px;
+ bottom: 116px;
+ width: 32px;
+ height: 20px;
+ border-radius: 12px;
+ border: 2px solid #fff;
+ background: url("images/e_05.png") no-repeat;
+ background-color: rgba(0,0,0,0.6);
+ color: #fff;
+ transition: all .2s;
+}
+.bomber_ker .play:hover{
+  border-color: #ff6700;
+  background: #ff6700;
+  background: url("images/rewq.png") no-repeat;
+  cursor: pointer;
+}
+.bomber_ker .kert_sa{
+  width: 210px;
+  height: 18px;
+  color: #333;
+  line-height: 18px;
+  margin: 0 42px 16px 42px;
+  font-size: 14px;
+  display: inline;
+  font-weight: 900;
+  text-align: center;
+}
+.bomber_ker .kert_sew{
+  width: 210px;
+  height: 18px;
+  color: #333;
+  line-height: 18px;
+  margin: 0 70px 16px 70px;
+  font-size: 14px;
+  display: inline;
+  font-weight: 900;
+  text-align: center;
+}
+.bomber_ker .kert_sew:hover{
+  color: #ff6700;
+  cursor: pointer;
+}
+.bomber_ker .kert_sa:hover{
+  color: #ff6700;
+  cursor: pointer;
+
+}
+.bomber_ker .kert_sat{
+  width: 210px;
+  height: 18px;
+  color: #333;
+  line-height: 18px;
+  margin: 0 50px 16px 50px;
+  font-size: 14px;
+  display: inline;
+  font-weight: 900;
+  text-align: center;
+}
+.bomber_ker .kert_sat:hover{
+  color: #ff6700;
+  cursor: pointer;
+}
+.bomber_ker .kert_a{
+  width: 296px;
+  height: 18px;
+  color: #333;
+  line-height: 18px;
+  /*margin: 0 42px 16px 42px;*/
+  font-size: 12px;
+    color: #b0b0b0;
+  font-weight: 400;
+  margin-top: -10px;
+  text-align: center;
+}
+.bomber_ker .kermet:hover {
+  /*z-index: 2;*/
+box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+transform: translate3d(0, -2px, 0);
+  cursor: pointer;
+}
+.bomber_ker .kermet_1:hover {
+  /*z-index: 2;*/
+box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+transform: translate3d(0, -2px, 0);
+  cursor: pointer;
+}
+.bomber_ker .kermet_2:hover {
+  /*z-index: 2;*/
+box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+transform: translate3d(0, -2px, 0);
+  cursor: pointer;
+}
+.bomber_ker .kermet_3:hover {
+  /*z-index: 2;*/
+box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+transform: translate3d(0, -2px, 0);
+  cursor: pointer;
+}
+/*页脚底部*/
+.slid_fiter{
+  width: 1349px;
+  height: 272px;
+}
+.contaipe{
+    width: 1226px;
+     height: 272px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.footer-service{
+ width: 100%;
+ height: 25px;
+ padding: 27px 0;
+border-bottom: 1px solid #e0e0e0;
+}
+.list-service {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.list-service li {
+    float: left;
+    width: 19.9%;
+    height: 25px;
+    font-size: 16px;
+    line-height: 25px;
+    border-right: 1px solid #e0e0e0;
+    text-align: center;
+}
+.list-service .conft{
+   border-right:0;
+}
+.list-service li:hover a{
+      color: #ff6700;
+      cursor: pointer;
+}
+.slid_fiter .list-service a {
+    color: #616161;
+    transition: color .2s;
+}
+.slid_fiter .list-service .iconfont {
+    margin-right: 6px;
+    font-size: 24px;
+    line-height: 24px;
+    font-style: normal;
+    vertical-align: -4px;
+}
+.footer-links{
+  width: 1226px;
+  height: 112px;
+  padding: 40px 0;
+}
+.footer-links .col-links{
+  width:160px;
+  height: 112px;
+  float: left;
+} 
+.footer-links .col-links dt {
+    margin: -1px 0 26px;
+    font-size: 14px;
+    line-height: 1.25;
+    color: #424242;
+}
+.col-links dd {
+    margin: 10px 0 0;
+    font-size: 12px;
+}
+.col-links a {
+    color: #757575;
+    font-size: 12px;
+}
+.col-links a:hover{
+  color: #ff6700;
+  cursor: pointer;
+}
+.col-contact {
+    float: right;
+    width: 251px;
+    height: 112px;
+    border-left: 1px solid #e0e0e0;
+    text-align: center;
+    color: #616161;
+}
+.col-contact .phone {
+    margin: -6px 0 5px;
+    font-size: 22px;
+    line-height: 1;
+    color: #ff6700;
+}
+.col-contact p {
+    margin: 5px 0 10px;
+    font-size: 12px;
+}
+.col-contact p span{
+  display: block;
+  /*line-height: 1px;*/
+} 
+.btn-line-primary {
+    width: 118px;
+    height: 28px;
+    border-color: #ff6700;
+    background: #fff;
+    color: #ff6700;
+    display: inline-block;
+    border: 1px solid #ff6700;
+    font-size: 14px;
+    line-height: 28px;
+    text-align: center;
+    cursor: pointer;
+    transition: all .4s;
+}
+.btn-line-primary:hover {
+    color: #fff;
+    background-color: #f25807;
+    cursor: pointer;
+     border-radius: 2px;
+    border-color: #f25807;
+}
+.site-info{
+   width: 1349px;
+   height: 166px;
+    padding: 30px 0;
+    font-size: 12px;
+    background: #fafafa;
+}
+.site-info .comfeg{
+    width: 1226px;
+    height: 57px;
+    /*background-color: purple;*/
+    margin-right: auto;
+    margin-left: auto;
+   position:relative;
+}
+.logoir{
+  width: 57px;
+  height: 57px;
+  float: left;
+  margin-right: 10px;
+  display:block;
+  text-align: center;
+  text-indent: -9999em;
+  overflow: hidden;
+  background: url("./images/xiaomi.png") no-repeat 50% 50%;
+} 
+.site-info .info-text{
+  width: 718px;
+  height: 55px;
+  color: #b0b0b0;
+  left:68px;
+  position: absolute;
+  /*background-color: yellow;*/
+}
+
+.site-info .info-text .sites {
+    margin: 0;
+    width: 718px;
+    height: 19px;
+    color: #b0b0b0;
+    position: absolute;
+      left:0;
+      float:left; 
+      font-size: 9px;
+    line-height: 18px;
+}
+.site-info .info-text .sites a{
+    padding-right:3px; 
+    border-right:1.5px solid #b2b2b2; 
+    color: #757575;
+}
+.site-info .sites a:hover {
+  color: #ff6700;
+  cursor: pointer;
+}
+.site-info .info-text .sites .reg{
+   border-right: none;
+}
+.info-text .micom{
+  width: 100%;
+  height: 36px;
+  
+  margin-top:20px; 
+  /*background-color: green;*/
+}
+.info-text .micom a{
+  color: #b0b0b0;
+}
+.micom a:hover{
+  color: #ff6700;
+  cursor: pointer;
+}
+.info-links{
+  width: 377px;
+  height: 28px;
+  margin: 4px 0 0;
+  position: absolute;
+  left: 856px;
+  /*background-color: green;*/
+}
+.info-links .chenxi{
+  display:block;
+  margin-top: -35px;
+  width: 60px;
+ position: absolute;
+ left: 137px;
+  color: #757575;
+}
+.info-links span{
+  display:block;
+  color: #757575;
+  width: 60px;
+ position: absolute;
+ left: 137px;
+ margin-top: -20px;
+}
+.info-links img{
+    width: auto;
+    height: 28px;
+    margin-left: 7px;
+}
+.info-links .kexi{
+  display:block;
+  color: #757575;
+  margin-top: -34px;
+  margin-left: 90px;
+}
+.info-links .xinyon{
+  display:block;
+  color: #757575;
+  margin-top: -17px;
+  margin-left: 90px;
+}
+.number{
+  display: inline-block;
+  position: absolute;
+  left: 280px;
+}
+.wang{
+  display:inline-block;
+  color: #757575;
+  top:-2px;
+  position: absolute;
+  left:316px;
+  /*margin-left: 190px;*/
+}
+.bao{
+   display:inline-block;
+  color: #757575;
+  top:14px;
+  position: absolute;
+  left:316px;
+}
+.img{
+  display: inline-block;
+  position: absolute;
+  left: 188px;
+}
+.slogan{
+   clear: both;
+    margin: 30px auto 0;
+    width: 267px;
+    height: 25px;
+    background: url(../i/slogan2016.png) no-repeat center 0;
+    display: block;
+    color: #b0b0b0;
+    text-align: left;
+     font-size: 20px;
+    overflow: hidden;
+}
+</style>
+<script type="text/javascript" src="./js/jquery-3.2.1.js"></script>
+</head>
+
+<body>
+<div class="wrap">
+     <!-- 头的顶部 -->
+	<div class="topbar">
+	  <div class="container">
+	  <div class="topbar_nav">
+	    <div>
+		  	<a href="javascript:;">小米商城</a><span class="sep">|</span>
+		  	<a href="javascript:;">MIUI</a><span class="sep">|</span>
+		  	<a href="javascript:;">米聊</a><span class="sep">|</span>
+		  	<a href="javascript:;">游戏</a><span class="sep">|</span>
+		  	<a href="javascript:;">多看阅读</a><span class="sep">|</span>
+		  	<a href="javascript:;">云服务</a><span class="sep">|</span>
+		  	<a href="javascript:;">金融</a><span class="sep">|</span>
+		  	<a href="javascript:;">小米商城移动版</a><span class="sep">|</span>
+		  	<a href="javascript:;">问题反馈</a><span class="sep">|</span>
+		  	<a href="javascript:;">Select Region</a><span class="sep">|</span>
+	  	</div>
+	  </div>
+	   <div class="dengru">
+		   <a href="javascript:;">登录</a><span class="sep">|</span>
+		  	<a href="javascript:;">注册</a><span class="sep">|</span>
+		  	<a href="javascript:;">消息通知</a><span class="sep">|</span>
+	   </div>
+	   <div class="gouwu">
+	     <div class="cut_menu">
+	     <p>购物车中还没有商品，赶紧选购吧！</p>
+	     </div>
+	   </div>
+	  </div>
+     <!-- logo图片 -->
+     <div class="header">
+        <div class="header_1">
+         <div class="header_logo"></div>
+          <div class="header_ben"></div>
+
+           <!--  <div class="nav_main"> -->
+
+                  <!-- 导航栏 -->
+            <ul class="header_nav">
+            	<li><a href="javascript:;">小米手机</a>
+            	  <!-- <div class="active"> -->
+            	   <ul class="active">
+	            	  	<li><a href="javascript:;"><img src="images/411131946.png" alt="" style="width: 160px;height: 110px;">
+	            	  	<span>小米手机5c</span>
+	            	  	<span class="price" >1499元</span>
+	            	  	</a></li>
+
+	            	  	<li><a href="javascript:;"><img src="images/1.jpg" alt="">
+	            	  	<span>小米Note 2</span>
+	            	  	<span class="price" >2799元起</span>
+	            	  	</a></li>
+
+	            	  	<li><a href="javascript:;"><img src="images/2.jpg" alt="">
+	            	  	<span>小米MIX</span>
+	            	  	<span class="price" >3499元起</span>
+	            	  	</a></li>
+
+	            	  	<li><a href="javascript:;"><img src="images/3.jpg" alt="">
+	            	  	<span>小米5s</span>
+	            	  	<span class="price" >1999元</span>
+	            	  	</a></li>
+
+	            	  	<li><a href="javascript:;"><img src="images/4.jpg" alt="">
+	            	  	<span>小米5s Plus</span>
+	            	  	<span class="price" >2299元起</span>
+	            	  	</a></li>
+
+	            	  	<li><a href="javascript:;"><img src="images/5.jpg" alt="">
+	            	  	<span>小米手机5</span>
+	            	  	<span class="price" >1799元</span>
+	            	  	</a></li>
+            	  </ul>
+            	</li>
+
+            	<li class="header_nav_1" ><a href="javascript:;">红米</a>
+            	  
+            	   <ul class="active_1"> 
+            	         
+	            	  	<li><a href="javascript:;"><img src="images/46789.jpg" alt="" style="width: 160px;height: 110px;">
+	            	  	<div class="flget">新品</div>
+	            	  	<span>红米Note 4X</span>
+	            	  	<span class="price_1" >999元起</span>
+	            	  	</a></li>
+
+	            	  	<li><a href="javascript:;"><img src="images/1.jpg" alt="">
+	            	  	<span>红米Note 4</span>
+	            	  	<span class="price_1" >999元起</span>
+	            	  	</a></li>
+
+	            	  	<li><a href="javascript:;"><img src="images/2.jpg" alt="">
+	            	  	<span>红米4X</span>
+	            	  	<span class="price_1" >699元起</span>
+	            	  	</a></li>
+
+	            	  	<li><a href="javascript:;"><img src="images/3.jpg" alt="">
+	            	  	<span>红米4A</span>
+	            	  	<span class="price_1" >599元</span>
+	            	  	</a></li>
+
+	            	  	<li><a href="javascript:;"><img src="images/4.jpg" alt="">
+	            	  	<span>红米4</span>
+	            	  	<span class="price_1" >799元起</span>
+	            	  	</a></li>
+            	  </ul> 
+            	 
+           	</li>
+
+           	<li class="header_nav_2" ><a href="javascript:;">平板 · 笔记本</a>
+            	  
+            	   <ul class="active_2">
+	            	  	<li><a href="javascript:;"><img src="images/mipad3_320.png" alt="" style="width: 160px;height: 110px;">
+	            	  	<div class="flget">新品</div>
+	            	  	<span>小米平板3 64GB</span>
+	            	  	<span class="price_2" >1499元</span>
+	            	  	</a></li>
+
+	            	  	<li><a href="javascript:;"><img src="images/444.jpg" alt="">
+	            	  	<div class="flget">新品</div>
+	            	  	<span>小米笔记本Air 12.5"</span>
+	            	  	<span class="price_2" >3599元</span>
+	            	  	</a></li>
+
+	            	  	<li><a href="javascript:;"><img src="images/555.jpg" alt="">
+	            	  	<span>小米笔记本Air 13.3"</span>
+	            	  	<span class="price_2" >4999元</span>
+	            	  	</a></li>
+
+	            	  	<li><a href="javascript:;"><img src="images/555.jpg" alt="">
+	            	  	<div class="flget">新品</div>
+	            	  	<span>小米笔记本Air尊享版</span>
+	            	  	<span class="price_2" >5999元</span>
+	            	  	</a></li>
+            	  </ul> 
+            	 
+           	</li>
+
+           	<li class="header_nav_3" ><a href="javascript:;">电视</a>
+            	  
+            	   <ul class="active_3">
+	            	  	<li><a href="javascript:;"><img src="images/320_43.png" alt="" style="width: 160px;height: 110px;">
+	            	  	<div class="flget">新品</div>
+	            	  	<span>小米电视4A 43英寸</span>
+	            	  	<span class="price_3" >2099元</span>
+	            	  	</a></li>
+
+	            	  	<li><a href="javascript:;"><img src="images/320_49.png" alt="" style="width: 160px;height: 110px;">
+	            	  	<div class="flget">新品</div>
+	            	  	<span>小米电视4A 49英寸</span>
+	            	  	<span class="price_3" >2599元起</span>
+	            	  	</a></li>
+
+	            	  	<li><a href="javascript:;"><img src="images/320_55.png" alt="" style="width: 160px;height: 110px;">
+	            	  	<div class="flget">新品</div>
+	            	  	<span>小米电视4A 55英寸</span>
+	            	  	<span class="price_3" >3199元起</span>
+	            	  	</a></li>
+
+	            	  	<li><a href="javascript:;"><img src="images/101860xin.png" alt="" style="width: 160px;height: 110px;">
+	            	  	<div class="flget">新品</div>
+	            	  	<span>小米电视4A 65英寸</span>
+	            	  	<span class="price_3" >5699元起</span>
+	            	  	</a></li>
+
+	            	  	<li><a href="javascript:;"><img src="images/320_65.png" alt="" style="width: 160px;height: 110px;">
+	            	  	<span>小米电视3s 60英寸</span>
+	            	  	<span class="price_3" >4799元</span>
+	            	  	</a></li>
+
+	            	  	<li><a href="javascript:;"><img src="images/70dianshi.png" alt="" style="width: 160px;height: 110px;">
+	            	  	<span>查看全部</span>
+	            	  	<span class="price_3" >小米电视</span>
+	            	  	</a></li>
+            	  </ul> 
+            	 
+           	</li>
+
+           	<li class="header_nav_4" ><a href="javascript:;">盒子 · 影音</a>
+            	  
+            	   <ul class="active_4">
+	            	  	<li><a href="javascript:;"><img src="images/mihezi.png" alt="" style="width: 160px;height: 110px;">
+	            	  	<div class="flget">新品</div>
+	            	  	<span>小米盒子3s</span>
+	            	  	<span class="price_4" >299元</span>
+	            	  	</a></li>
+
+	            	  	<li><a href="javascript:;"><img src="images/mihezi.png" alt="" style="width: 160px;height: 110px;">
+	            	  	
+	            	  	<span>小米盒子3c</span>
+	            	  	<span class="price_4" >199元</span>
+	            	  	</a></li>
+
+	            	  	<li><a href="javascript:;"><img src="images/44444.jpg" alt="" style="width: 160px;height: 110px;">
+	            	  	<div class="flget">新品</div>
+	            	  	<span>小米盒子3 增强版</span>
+	            	  	<span class="price_4" >399元</span>
+	            	  	</a></li>
+
+	            	  	<li><a href="javascript:;"><img src="images/hezimini.png" alt="" style="width: 160px;height: 110px;">
+	            	  	
+	            	  	<span>小米盒子mini版</span>
+	            	  	<span class="price_4" >179元</span>
+	            	  	</a></li>
+
+	            	  	<li><a href="javascript:;"><img src="images/320x220.png" alt="" style="width: 160px;height: 110px;">
+	            	  	<div class="flget">新品</div>
+	            	  	<span>小米家庭影院</span>
+	            	  	<span class="price_4" >1999元</span>
+	            	  	</a></li>
+
+	            	  	<li><a href="javascript:;"><img src="images/putonban!160x110.jpg" alt="" style="width: 160px;height: 110px;">
+	            	  	<div class="flget">新品</div>
+	            	  	<span>小米家庭音响 标准版</span>
+	            	  	<span class="price_4" >699元</span>
+	            	  	</a></li>
+            	  </ul> 
+            	 
+           	</li>
+
+           		<li class="header_nav_5" ><a href="javascript:;">路由器</a>
+            	  
+            	   <ul class="active_5">
+	            	  	<li><a href="javascript:;"><img src="images/lyqhd.png" alt="" style="width: 160px;height: 110px;">
+	            	  	<div class="flget">新品</div>
+	            	  	<span>小米路由器 HD</span>
+	            	  	<span class="price_5" >1299元</span>
+	            	  	</a></li>
+
+	            	  	<li><a href="javascript:;"><img src="images/pro320x220.png" alt="" style="width: 160px;height: 110px;">
+	            	  	<div class="flget">新品</div>
+	            	  	<span>小米路由器 Pro</span>
+	            	  	<span class="price_5" >499元</span>
+	            	  	</a></li>
+
+	            	  	<li><a href="javascript:;"><img src="images/lyq31.png" alt="" style="width: 160px;height: 110px;">
+	            	  	<div class="flget">新品</div>
+	            	  	<span>小米路由器 3</span>
+	            	  	<span class="price_5" >149元</span>
+	            	  	</a></li>
+
+	            	  	<li><a href="javascript:;"><img src="images/lyq3c1.png" alt="" style="width: 160px;height: 110px;">
+	            	  	
+	            	  	<span>小米路由器 3C</span>
+	            	  	<span class="price_5" >99元</span>
+	            	  	</a></li>
+
+	            	  	<li><a href="javascript:;"><img src="images/dlm01.png" alt="" style="width: 160px;height: 110px;">
+	            	  	<div class="flget">新品</div>
+	            	  	<span>小米WiFi电力猫</span>
+	            	  	<span class="price_5" >249元</span>
+	            	  	</a></li>
+
+	            	  	<li><a href="javascript:;"><img src="images/fdq2!160x110.jpg" alt="" style="width: 160px;height: 110px;">
+	            	  	<div class="flget">新品</div>
+	            	  	<span>小米WiFi放大器 2</span>
+	            	  	<span class="price_5" >49元</span>
+	            	  	</a></li>
+            	  </ul> 
+            	 
+           	</li>
+
+           	<li class="header_nav_6" ><a href="javascript:;">智能硬件</a>
+            	  
+            	   <ul class="active_6">
+	            	  	<li><a href="javascript:;"><img src="images/tzc320!160x110.jpg" alt="" style="width: 160px;height: 110px;">
+	            	  	<div class="flget">新品</div>
+	            	  	<span>小米体脂秤</span>
+	            	  	<span class="price_6" >199元</span>
+	            	  	</a></li>
+
+	            	  	<li><a href="javascript:;"><img src="images/jjy320!160x110.jpg" alt="" style="width: 160px;height: 110px;">
+	            	  	<div class="flget">新品</div>
+	            	  	<span>米家行车记录仪</span>
+	            	  	<span class="price_6" >349元</span>
+	            	  	</a></li>
+
+	            	  	<li><a href="javascript:;"><img src="images/wrj4k320.png" alt="" style="width: 160px;height: 110px;">
+	            	  	<div class="flget">新品</div>
+	            	  	<span>小米无人机 4k 版</span>
+	            	  	<span class="price_6" >2999元</span>
+	            	  	</a></li>
+
+	            	  	<li><a href="javascript:;"><img src="images/djj320!160x110.jpg" alt="" style="width: 160px;height: 110px;">
+	            	  	
+	            	  	<span>小米米家对讲机</span>
+	            	  	<span class="price_6" >249元</span>
+	            	  	</a></li>
+
+	            	  	<li><a href="javascript:;"><img src="images/dfb!160x110.jpg" alt="" style="width: 160px;height: 110px;">
+	            	  	<div class="flget">新品</div>
+	            	  	<span>米家IH电饭煲</span>
+	            	  	<span class="price_6" >399元</span>
+	            	  	</a></li>
+
+	            	  	<li><a href="javascript:;"><img src="images/air2!160x110 (1).jpg" alt="" style="width: 160px;height: 110px;">
+	            	  	<!-- <div class="flget">新品</div> -->
+	            	  	<span>查看全部</span>
+	            	  	<span class="price_6" >智能硬件</span>
+	            	  	</a></li>
+            	  </ul> 
+            	 
+           	</li>
+            <li><a href="javascrip:;">服务</a></li>
+            <li><a href="javascrip:;">社区</a></li>
+            </ul>
+
+           <!-- 搜索框 -->
+          <div class="header_2">
+          <form action="" method="get" class="seachfor">
+          <input type="search" name="keyword" class="search-text">
+          <input type="" name="keyword" class="search-btn ">
+          </form>
+          </div>
+          <!-- <div class="hader_3"><img src="images/search.png" alt=""></div> -->
+          <div class="hader_4"> 
+          <span>红米 4X</span>
+          <span class="n2">红米Note4</span>
+          </div>
+        </div>
+        
+           <!-- 轮播图 -->
+        <div class="main">
+        <div class="left">
+
+          <!-- 左侧栏列表 -->
+	       <ul class="catoger">
+	           	<li class="item"><a href="javascript:;">手机 电话卡</a>
+                <div class="cator_1">
+                 <ul>
+                   <li><a href="javascript:;" class="a2_1"><img src="images/411131946.png" alt="">小米手机5c</a><span>选购</span></li>
+                   <li><a href="javascript:;" class="a2_1"><img src="images/1.jpg" alt="">小米Note 2</a><span class="span_1">选购</span></li>
+                   <li><a href="javascript:;" class="a2_1"><img src="images/2.jpg" alt="">小米MIX</a><span class="span_2">选购</span></li>
+                   <li><a href="javascript:;" class="a2_1"><img src="images/3.jpg" alt="">小米5s</a><span class="span_3">选购</span></li>
+                   <li><a href="javascript:;" class="a2_1"><img src="images/4.jpg" alt="">小米5s Plus</a><span class="span_4">选购</span></li>
+                   <li><a href="javascript:;" class="a2_1"><img src="images/5.jpg" alt="">小米手机5</a><span class="span_5">选购</span></li>
+                 </ul>
+                <!-- </div> -->
+
+              <div class="cator_2">
+                   <ul>
+                     <li><a href="javascript:;" class="a2_1"><img src="images/46789.jpg" alt="">红米Note 4X</a><span>选购</span></li>
+                     <li><a href="javascript:;" class="a2_1"><img src="images/hmnote4-80.jpg" alt="">红米Note 4</a><span class="tor_1">选购</span></li>
+                     <li><a href="javascript:;" class="a2_1"><img src="images/hm4x_80.png" alt="">红米4X</a><span class="tor_2">选购</span></li>
+                     <li><a href="javascript:;" class="a2_1"><img src="images/hm4-80.jpg" alt="">红米4</a><span class="tor_3">选购</span></li>
+                     <li><a href="javascript:;" class="a2_1"><img src="images/hm4A-80.jpg" alt="">红米4A</a><span class="tor_4">选购</span></li>
+                     <li><a href="javascript:;" class="a2_1"><img src="images/compare (1).jpg" alt="">对比手机</a><span class="tor_5">选购</span></li>
+                      <div class="xuangou">
+                       <li><a href="javascript:;" class="a2_1"><img src="images/mimobile (1).jpg" alt="">小米移动 电话卡</a></li>
+                   </div>
+                 </ul>
+                 </div>                  
+                </div>
+                 
+              </li >
+	           	<li class="item"><a href="javascript:;">笔记本 平板</a>
+                <div class="cator_4">
+                 <ul class="pinban">
+                   <li><a href="javascript:;" class="a2_1"><img src="images/bijiben80.jpg" alt="">小米笔记本Air</a><span>选购</span></li>
+                   <li><a href="javascript:;" class="a2_1"><img src="images/mipad3_80.jpg" alt="">小米平板3</a><span class="span_1">选购</span></li>
+                   <li><a href="javascript:;" class="a2_1"><img src="images/usbzjqggg80 (1).jpg" alt="">USB-C转接器</a><span class="span_2">选购</span></li>
+                   <li><a href="javascript:;" class="a2_1"><img src="images/neidanbao80 (1).jpg" alt="">小米笔记本内胆包</a><span class="span_3">选购</span></li>
+                   <li><a href="javascript:;" class="a2_1"><img src="images/shubiao80 (1).jpg" alt="">小米便携鼠标</a><span class="span_4">选购</span></li>
+                   <li><a href="javascript:;" class="a2_1"><img src="images/wxsb80.png" alt="">小米无线鼠标</a><span class="span_5">选购</span></li>
+                 </ul>
+                </div>
+              </li>
+
+	           	<li class="item"><a href="javascript:;">电视 盒子</a>
+                 <div class="cator_5">
+                 <ul>
+                   <li><a href="javascript:;" class="a2_1"><img src="images/xp80_43.jpg" alt="">小米电视4A 43英寸</a></li>
+                   <li><a href="javascript:;" class="a2_1"><img src="images/xp80_49.jpg" alt="">小米电视4A 49英寸</a></li>
+                   <li><a href="javascript:;" class="a2_1"><img src="images/xp80_55.jpg" alt="">小米电视4A 55英寸</a></li>
+                   <li><a href="javascript:;" class="a2_1"><img src="images/xp80_65.jpg" alt="">小米电视4A 55英寸</a></li>
+                   <li><a href="javascript:;" class="a2_1"><img src="images/mitv3s48 (1).jpg" alt="">小米电视3s 48英寸</a></li>
+                   <li><a href="javascript:;" class="a2_1"><img src="images/553s80 (1).png" alt="">小米电视3s 55英寸</a></li>
+                 </ul>
+                <!-- </div> -->
+
+              <div class="cator_6">
+                   <ul>
+                     <li><a href="javascript:;" class="a2_1"><img src="images/018080 (1).png" alt="">小米电视3s 60英寸</a></li>
+                     <li><a href="javascript:;" class="a2_1"><img src="images/653s80 (1).png" alt="">小米电视3s 65英寸</a></li>
+                     <li><a href="javascript:;" class="a2_1"><img src="images/6580side (1).jpg" alt="">小米电视3s 65英寸</a></li>
+                     <li><a href="javascript:;" class="a2_1"><img src="images/tv60 (1).jpg" alt="">小米电视3 60英寸</a></li>
+                     <li><a href="javascript:;" class="a2_1"><img src="images/tv70 (1).png" alt="">小米电视3 70英寸</a></li>
+                     <li><a href="javascript:;" class="a2_1"><img src="images/hezi80-80 (1).jpg" alt="">小米盒子3s</a></li>
+                   
+                  <div class="cator_7">
+                   <ul>
+                     <li><a href="javascript:;" class="a2_1"><img src="images/hezi80-80 (2).jpg" alt="">小米盒子3c</a></li>
+                     <li><a href="javascript:;" class="a2_1"><img src="images/hezizengqiangban80side (1).jpg" alt="">小米盒子3 增强版</a></li>
+                     <li><a href="javascript:;" class="a2_1"><img src="images/hezimini (1).jpg" alt="">小米盒子 mini</a></li>
+                     <li><a href="javascript:;" class="a2_1"><img src="images/diyinpao (1).jpg" alt="">小米低音炮</a></li>
+                     <li><a href="javascript:;" class="a2_1"><img src="images/shb (1).jpg" alt="">蓝牙手柄</a></li>
+                     <li><a href="javascript:;" class="a2_1"><img src="images/80x80.jpg" alt="">家庭音响</a></li>
+                      <div class="xuangou_1">
+                       <li><a href="javascript:;" class="a2_1"><img src="images/dianshipeijian (1).jpg" alt="">电视盒子配件</a></li>
+                   </div>
+                 </ul>
+                 </div> 
+
+                 </ul>  
+
+                </div>
+              </li>
+	           	<li class="item"><a href="javascript:;">路由器 智能硬件</a>
+                <div class="cator_8">
+                 <ul>
+                   <li><a href="javascript:;" class="a2_1"><img src="images/jiqiren (1).jpg" alt="">米家扫地机器人配件</a></li>
+                   <li><a href="javascript:;" class="a2_1"><img src="images/xinvr80.png" alt="">小米VR眼镜</a></li>
+                   <li><a href="javascript:;" class="a2_1"><img src="images/luyouqi-80 (1).jpg" alt="">小米路由器</a></li>
+                   <li><a href="javascript:;" class="a2_1"><img src="images/scooter (1).jpg" alt="">九号平衡车</a></li>
+                   <li><a href="javascript:;" class="a2_1"><img src="images/zxc80-80 (1).jpg" alt="">电助力折叠自行车</a></li>
+                   <li><a href="javascript:;" class="a2_1"><img src="images/shuihu80 (1).jpg" alt="">米家恒温电水壶</a></li>
+                 </ul>
+                <!-- </div> -->
+
+              <div class="cator_9">
+                   <ul>
+                     <li><a href="javascript:;" class="a2_1"><img src="images/czjhq80 (1).jpg" alt="">米家车载空气净化器</a></li>
+                     <li><a href="javascript:;" class="a2_1"><img src="images/dianhuashoubiao80 (1).jpg" alt="">手表</a></li>
+                     <li><a href="javascript:;" class="a2_1"><img src="images/dianfanbao-80 (1).jpg" alt="">米家智能电饭煲</a></li>
+                     <li><a href="javascript:;" class="a2_1"><img src="images/xiaobai80 (1).jpg" alt="">智能摄像机</a></li>
+                     <li><a href="javascript:;" class="a2_1"><img src="images/jinghuaqilvxin80 (1).jpg" alt="">净化器及滤芯</a></li>
+                     <li><a href="javascript:;" class="a2_1"><img src="images/jingshuiqiandlvxin-80 (1).jpg" alt="">净水器及滤芯</a></li>
+                   
+                  <div class="cator_10">
+                   <ul>
+                     <li><a href="javascript:;" class="a2_1"><img src="images/xueyaji-80 (1).jpg" alt="">血压计</a></li>
+                     <li><a href="javascript:;" class="a2_1"><img src="images/jiqiren80 (1).jpg" alt="">米兔积木机器人</a></li>
+                     <li><a href="javascript:;" class="a2_1"><img src="images/zhinengdeng-80 (1).jpg" alt="">智能灯</a></li>
+                     <li><a href="javascript:;" class="a2_1"><img src="images/gushiji80 (1).jpg" alt="">米兔智能故事机</a></li>
+                     <li><a href="javascript:;" class="a2_1"><img src="images/zhinengjiatingtaozhuang-80 (1).jpg" alt="">智能家庭组合</a></li>
+                     <li><a href="javascript:;" class="a2_1"><img src="images/shouhuan280 (1).jpg" alt="">手环及配件</a></li>
+
+                      <div class="xuangou_1">
+                       <li><a href="javascript:;" class="a2_1"><img src="images/scale (1).jpg" alt="">体重秤 / 体脂秤</a></li>
+                        <li><a href="javascript:;" class="a2_1"><img src="images/huabanche80.jpg" alt="">电动滑板车</a></li>
+                         <li><a href="javascript:;" class="a2_1"><img src="images/wurenji80 (1).jpg" alt="">小米无人机</a></li>
+                          <li><a href="javascript:;" class="a2_1"><img src="images/jly80.jpg" alt="">米家行车记录仪</a></li>
+                           <li><a href="javascript:;" class="a2_1"><img src="images/djj80.jpg" alt="">小米米家对讲机</a></li>
+                            <li><a href="javascript:;" class="a2_1"><img src="images/znyjdaohang (1).jpg" alt="">全部智能硬件</a></li>
+                   </div>
+                 </ul>
+                 </div> 
+
+                 </ul>  
+
+                </div>
+              </li>
+	           	<li class="item"><a href="javascript:;">移动电源 电池 插线板</a>
+                <div class="cator_11">
+                 <ul>
+                   <li><a href="javascript:;" class="a2_1"><img src="images/dianyuan280 (1).jpg" alt="">小米移动电源</a></li>
+                   <li><a href="javascript:;" class="a2_1"><img src="images/c1xb343.jpg" alt="">插线板</a></li>
+                   <li><a href="javascript:;" class="a2_1"><img src="images/yidongdianyuan (1).jpg" alt="">品牌移动电源</a></li>
+                   <li><a href="javascript:;" class="a2_1"><img src="images/dianyuanfujian (1).jpg" alt="">移动电源附件</a></li>
+                   <li><a href="javascript:;" class="a2_1"><img src="images/chongdianqi-80 (1).jpg" alt="">充电器</a></li>
+                   <li><a href="javascript:;" class="a2_1"><img src="images/5Battery1 (1).jpg" alt="">彩虹5号电池</a></li>
+                   </ul>
+
+                   <div class="cator_12">
+                   <ul>
+                     <li><a href="javascript:;" class="a2_1"><img src="images/7Battery1 (1).jpg" alt="">彩虹7号电池</a></li>
+                     <!-- <li><a href="javascript:;" class="a2_1"><img src="images/dianhuashoubiao80 (1).jpg" alt="">手表</a></li>
+                     <li><a href="javascript:;" class="a2_1"><img src="images/dianfanbao-80 (1).jpg" alt="">米家智能电饭煲</a></li> -->
+                 </ul>
+                 </div>
+              </li>
+	           	<li class="item"><a href="javascript:;">耳机 音箱</a></li>
+	           	<li class="item"><a href="javascript:;">保护套 贴膜</a></li>
+	           	<li class="item"><a href="javascript:;">线材 支架 存储卡</a></li>
+	           	<li class="item"><a href="javascript:;">箱包 服饰 鞋</a></li>
+	           	<li class="item"><a href="javascript:;">米兔 生活周边</a></li>
+	           </ul>
+        </div>
+        <!-- 右侧轮播图 -->
+        <div class="right">
+          <div class="hteer">
+    <ul>
+        <li><img src="./images/xmad_14919076510657_pVfsS.jpg" alt=""></li>
+        <li><img src="./images/xmad_14962355964702_hGDLa.jpg" alt=""></li>
+        <li><img src="./images/xmad_14954204563199_hUckQ.jpg" alt=""></li>
+        <li><img src="./images/xmad_14976213686315_LmCMn.jpg" alt=""></li>
+        <li><img src="./images/5753d5e0-a89b-4a8b-ab00-a42eb66eb6f5.jpg" alt=""></li>
+        <li><img src="./images/xmad_14978433805338_BsrFp.jpg" alt=""></li>
+    </ul>
+</div>
+<div class="slide">
+    <div style = "opacity: 1"></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+
+</div>
+        </div>
+        </div>
+          <!-- 选购手机栏 -->
+        <div class="home_row">
+           <div class="div_span">
+              <ul class="span_home">
+                 <li class="top_left"><a href="javascript:;"></a></li>
+                 <li class="top_left_1"><a href="javascript:;"></a></li>
+                 <li class="top_left_2"><a href="javascript:;"></a></li>
+                 <li class="top_left_3"><a href="javascript:;"></a></li>
+                 <li class="top_left_4"><a href="javascript:;"></a></li>
+                 <li class="top_left_5"><a href="javascript:;"></a></li>
+           </ul>
+        </div>
+          <div class="div_form">
+           <div class="div_from_1"><img src="images/xmad_1487844180216_JVvCK.jpg" alt=""></div>
+           <div class="div_from_2"><img src="images/xmad_14896582916027_isKTx.jpg" alt=""></div>
+           <div class="div_from_3"><img src="images/xmad_14919929115904_lAJpF.jpg" alt=""></div>
+          </div>
+        </div>
+
+      <!-- 小米明星单品 -->
+    <div class="tait">
+       <h2 class="title">小米明星单品</h2>
+       <div class="more">
+         <div class="contros">
+         <a href="javascript:;" class="a1"></a>
+         <a href="javascript:;" class="a2"></a>
+         </div>
+       </div>
+       </div>
+       <div class="box-bd">
+         <ul>
+           <li class="rainbow-item-1"><a href="javascript:;"><img src="images/xmad_14917453512947_AmXkT.png" alt=""></a>
+           <p  class="box_p">10000mAh小米移动电源2</p>
+           <p>双向快充，高密度锂聚合物电芯</p>
+           <p class="price">79元</p></li>
+
+           <li class="rainbow-item-2"><a href="javascript:;"><img src="images/28f54c24-e1f8-4cd2-b05f-f47b324ba788.png" alt=""></a>
+            <p  class="box_p">小米手机5 64GB</p>
+           <p>骁龙820处理器，4轴防抖相机</p>
+           <p class="price">1799元</p></li>
+        
+
+           <li class="rainbow-item-3"><a href="javascript:;"><img src="images/f24c0788-e6c2-4139-8f53-c0d4524eda09.png" alt=""></a>
+            <p  class="box_p">红米Note4  4GB+64GB</p>
+           <p>4月10日-4月30日，领券减100元</p>
+           <p class="price">1399元</p></li>
+           
+           <li class="rainbow-item-4"><a href="javascript:;"><img src="images/T1KvdjBX_v1RXrhCrK.jpg" alt=""></a>
+            <p  class="box_p">小米净水器 厨下式</p>
+           <p>直出纯净水，隐藏式安装</p>
+           <p class="price">1999元</p></li>
+          
+           <li class="rainbow-item-5"><a href="javascript:;"><img src="images/848def18-47d9-4ca0-8822-c2ac61b83779.png" alt=""></a>
+            <p  class="box_p">米家扫地机器人</p>
+           <p>智能路径规划，扫得干净扫得快</p>
+           <p class="price">1699元</p></li>
+           
+         </ul>
+       </div>
+   
+     <!-- 智能硬件 -->
+      <div class="pag_main">
+        <div class="boacker_er_1">
+       <h2 class="aut_er">智能硬件</h2>
+       <div class="aur_e"><a href="javascript:;"></a></div>
+     </div>
+       <div class="bricked">
+         <div class="bkr_row">
+           <div class="bkr_how">
+           <ul class="brick-promo">
+             <li class="brick-item"><a href="javascript:;"><img src="images/xmad_14919049322364_VRaJN.jpg" alt=""></a></li>
+           </ul>
+           </div>
+
+           <div class="spance_m">
+             <ul class="brick-list ">
+                <li class=" brick-item-m ">
+                <div class="figure-img"><a href="javascript:;"><img src="images/pms_1478678718.61531371!220x220 (1).jpg" alt=" style="width:160px;height160px;">
+                <p class="mijia">米家IH电饭煲 3L</p>
+                <p class="dianci">IH 电磁环绕加热,3000+ 煮米方案</p>
+                <p class="jiaqian">399元</p>
+                </a></div>
+                </li>
+                  <li class=" brick-item-m1 ">
+                <div class="figure-img"><a href="javascript:;"><img src="images/T1zBYgBCWv1RXrhCrK!220x220.jpg" alt=" style="width:160px;height160px;">
+                <p class="mijia">小米空气净化器2</p>
+                <p class="dianci">高效除霾，10分钟换新房间空气</p>
+                <p class="jiaqian">699元</p>
+                <div class="ferts">新品</div>
+                </a></div>
+                </li>
+
+                <li class=" brick-item-m2 ">
+                <div class="figure-img"><a href="javascript:;"><img src="images/T1PXhgBbdT1RXrhCrK!220x220.jpg" alt=" style="width:160px;height160px;">
+                <p class="mijia">九号平衡车</p>
+                <p class="dianci">年轻人的酷玩具，骑行遥控两种玩法</p>
+                <p class="jiaqian">1999元</p>
+                </a></div>
+                </li>
+                
+                <li class=" brick-item-m3 ">
+                <div class="figure-img"><a href="javascript:;"><img src="images/pms_1477985364.89714934!220x220.jpg" alt=" style="width:160px;height160px;">
+                <p class="mijia">小米VR眼镜</p>
+                <p class="dianci">硬件级加速抗眩晕，配备9轴体感手柄</p>
+                <p class="jiaqian">299元</p>
+                <div class="ferts">新品</div>
+                </a></div>
+                </li>
+                 <li class=" brick-item-m4 ">
+                <div class="figure-img_1"><a href="javascript:;"><img src="images/pms_1488190122.83567909!220x220.jpg" alt=" style="width:160px;height160px;">
+                <p class="mijia">米家智能摄像机 1080P</p>
+                <p class="dianci">10米红外夜视范围，双向语音沟通</p>
+                <p class="jiaqian">199元</p>
+                <div class="ferts">新品</div>
+                </a></div>
+                </li>
+
+                 <li class=" brick-item-m5 ">
+                <div class="figure-img_1"><a href="javascript:;"><img src="images/pms_1490756071.3088664!220x220.png" alt=" style="width:160px;height160px;">
+                <p class="mijia">Yeelight LED 吸顶灯</p>
+                <p class="dianci">5分钟快装，月光夜灯，IP60 级防尘</p>
+                <p class="jiaqian">379元</p>
+                <div class="ferts">新品</div>
+                </a></div>
+                </li>
+
+                 <li class=" brick-item-m6 ">
+                <div class="figure-img_1"><a href="javascript:;"><img src="images/pms_1482392549.50965908!220x220.jpg" alt=" style="width:160px;height160px;">
+                <p class="mijia">米家车载空气净化器</p>
+                <p class="dianci">双风机循环气流，高效净化车内空气</p>
+                <p class="jiaqian">449元</p>
+                </a></div>
+                </li>
+
+                 <li class=" brick-item-m7 ">
+                <div class="figure-img_1"><a href="javascript:;"><img src="images/pms_1488272686.62666302!220x220.jpg" alt=" style="width:160px;height160px;">
+                <p class="mijia">小米米家电动滑板车</p>
+                <p class="dianci">极简几何设计，1 分钟轻松上手</p>
+                <p class="jiaqian">1999元</p>
+                </a></div>
+
+                </li>
+             </ul>
+           </div>
+         </div>
+
+           <!-- 搭配栏 -->
+           <div class="box-hd">
+           <h2 class="ter_h2">搭配</h2>
+            <div class="J_brickNav">
+             <ul class="tab-list ">
+              
+              <li>热门</li>
+              <li>耳机音箱</li>
+              <li>电源</li>
+              <li>电池存储卡</li>
+            </ul>
+            </div>
+
+             <div class="J_brickBd">
+              <div class="bd_1"><img src="images/xmad_14917442265775_pIcEt.jpg" alt=""></div>
+
+              <div class="bd_2"><img src="images/pms_1482301662.61336109!220x220.jpg" alt="">
+               <p class="xiaomi">  小米头戴式耳机 轻松版  </p>
+               <p class="prive">149元</p>
+               <p class="rivek">1118人评价</p>
+                 <div class="ferte_me"> 享6折 </div>
+                <div class="review_waper">
+                   <a href="javascript:;">
+                   <span class="review">电源重一点好，外观不错，有点</span>
+                   <span class="review_1">舍不得用了</span>
+                   <span class="author"> 来自于 945837856 的评价 </span>
+                   </a>
+                </div>
+              </div>
+
+              <div class="bd_3"><img src="images/pms_1476674302.67179007.jpg" alt="">
+                <p class="xiaomi">  小米运动蓝牙耳机  </p>
+               <p class="prive">149元</p>
+               <p class="rivek">4577人评价</p>
+
+              </div>
+
+              <div class="bd_4"><img src="images/pms_1482321199.12589253.jpg" alt="">
+                <p class="xiaomi">  小米活塞耳机 清新版  </p>
+               <p class="prive">29元</p>
+               <p class="rivek">2.7万人评价</p>
+                <div class="review_waper">
+                   <a href="javascript:;">
+                   <span class="review">不懂音质好不好，但挺好用的</span>
+                   <span class="author">  来自于 984784356 的评价  </span>
+                   </a>
+                </div>
+              </div>
+
+              <div class="bd_5"><img src="images/pms_1483066190.58189536.jpg" alt="">
+
+                <p class="xiaomi">  小米网络音响  </p>
+               <p class="prive">399元</p>
+               <p class="rivek">4296人评价</p>
+              </div>
+           
+              <div class="bd_6"><img src="images/xmad_14897335714698_hsIrY.jpg" alt=""></div>
+
+              <div class="bd_7"><img src="images/pms_1481269289.59498154.jpg" alt="">
+                 <p class="xiaomi">  小米移动电源10000mAh高配版  </p>
+               <p class="prive">149元</p>
+               <p class="rivek">4657人评价</p>
+               <div class="ferte_meter">新品</div>
+               
+              </div>
+
+              <div class="bd_8"><img src="images/pms_1478248721.42297795.jpg" alt="">
+                 <p class="xiaomi">  小米蓝牙耳机青春版  </p>
+               <p class="prive">59元</p>
+               <p class="rivek">1.8万人评价</p>
+              </div>
+
+              <div class="bd_9"><img src="images/pms_1478510064.36397738.jpg" alt="">
+                 <p class="xiaomi">  小米圈铁耳机Pro  </p>
+               <p class="prive">149元</p>
+               <p class="rivek">1.4万人评价</p>
+                 <div class="ferte_me"> 享6折 </div>
+                 <div class="review_waper">
+                   <a href="javascript:;">
+                   <span class="review">就是音量太小了，别的都好。</span>
+                   <span class="author"> 来自于 101564736 的评价  </span>
+                   </a>
+                </div>
+              </div>
+
+              <div class="bd_10">
+               <div class="fotr_1"><img src="images/T1F5K_BjVv1RXrhCrK.jpg" alt="">
+                 <p class="xiaomi"> 小米小钢炮蓝牙音箱2 白色  </p>
+               <p class="prive">129元</p>
+               </div>
+               <div class="fotr_2"><img src="images/657.png" alt="">
+                   <p class="xiaomi"> 浏览更多  </p>
+               <p class="prive">热门</p>
+               </div>
+              </div>
+              
+
+             </div>
+
+             <!-- =============== -->
+               <!-- 配件栏 -->
+        <div class="box-hd">
+          <h2 class="ter_h2">配件</h2>
+           <div class="J_brickNav">
+             <ul class="tab-list ">
+              
+              <li>热门</li>
+              <li>保护套</li>
+              <li>贴膜</li>
+              <li>其他配件</li>
+            </ul>
+            </div>
+
+             <div class="J_brickBd">
+              <div class="bd_11"><img src="images/0ff2c84c-d0e6-4232-b0fb-2cebefd1a207.jpg" alt=""></div>
+
+              <div class="bd_12"><img src="images/pms_1488522435.98588934!220x220.jpg" alt="">
+               <p class="xiaomi">  红米4X 高透软胶保护套 透明  </p>
+               <p class="prive">19元</p>
+               <p class="rivek">306人评价</p>
+               <div class="ferte_me"> 享6折 </div>
+                <div class="review_waper">
+                   <a href="javascript:;">
+                   <span class="review">米粉节买的，跟缺货，发现有货</span>
+                   <span class="review_1">立刻下单</span>
+                   <span class="author">  来自于 1118241347 的评价  </span>
+                   </a>
+                </div>
+              </div>
+
+              <div class="bd_13"><img src="images/pms_1486980879.11199962!220x220.jpg" alt="">
+                <p class="xiaomi"> 红米Note 4X 高透软胶保护套 透明 </p>
+               <p class="prive">19元</p>
+               <p class="rivek">1923人评价</p>
+                  <div class="review_waper">
+                   <a href="javascript:;">
+                   <span class="review">还不错。如果包邮就好了。</span>
+                   <span class="author">   来自于 老刘 的评价  </span>
+                   </a>
+                </div>
+
+              </div>
+
+              <div class="bd_14"><img src="images/pms_1480580129.24255998!220x220.jpg" alt="">
+                <p class="xiaomi">  小米Note  2 高透软胶保护套  </p>
+               <p class="prive">9.9元</p>
+               <p class="rivek">1447人评价</p>
+                 <div class="review_waper">
+                   <a href="javascript:;">
+                   <span class="review">首发拿到的手机！现在才拿出来用！</span>
+                   <span class="review_1">舍不得我得米5尊享版...</span>
+                   <span class="author">   来自于 木子灬新 的评价  </span>
+                   </a>
+                </div>
+              </div>
+
+              <div class="bd_15"><img src="images/pms_1474888521.26868202!220x220 (1).jpg" alt="">
+
+                <p class="xiaomi"> 小米5s Plus 智能翻盖保护套  </p>
+               <p class="prive">49元</p>
+               <p class="rivek">2771人评价</p>
+                  <div class="ferte_me"> 享6折 </div>
+                 <div class="review_waper">
+                   <a href="javascript:;">
+                   <span class="review">比手机晚一天下的单，结果保护</span>
+                   <span class="review_1">套已经神速送达，手机却还...</span>
+                   <span class="author">   来自于 星痕 的评价   </span>
+                   </a>
+                </div>
+              </div>
+           
+              <div class="bd_16"><img src="images/xmad_14917439688152_WfFXu.jpg" alt=""></div>
+
+              <div class="bd_17"><img src="images/pms_1474888072.78155129!220x220.jpg" alt="">
+                 <p class="xiaomi">  小米5s 智能立显点阵式保护套  </p>
+               <p class="prive">79元</p>
+               <p class="rivek">3141人评价</p>
+
+                <div class="review_waper">
+                   <a href="javascript:;">
+                   <span class="review">外形漂亮，前面对着灯光，灯光</span>
+                   <span class="review_1">透过点面，看着晶莹闪亮，...</span>
+                   <span class="author">   来自于 dyj 的评价    </span>
+                   </a>
+                </div>
+              </div>
+
+              <div class="bd_18"><img src="images/T1jWWjBsET1RXrhCrK!220x220.jpg" alt="">
+                 <p class="xiaomi"> 小米Max 超薄肤感软胶保护套 </p>
+               <p class="prive">29元</p>
+               <p class="rivek">1.2万人评价</p>
+                  <div class="ferte_me"> 享6折 </div>
+                 <div class="review_waper">
+                   <a href="javascript:;">
+                   <span class="review">还好吧，1分钱抽的，</span>
+                   <span class="review_1">颜色淡淡的，喜欢～</span>
+                   <span class="author">   来自于 877049120 的评价     </span>
+                   </a>
+                </div>
+              </div>
+
+              <div class="bd_19"><img src="images/pms_1478163840.49069197!220x220.jpg" alt="">
+                 <p class="xiaomi"> 红米4高配版 超薄肤感软胶保护套  </p>
+               <p class="prive">19元</p>
+               <p class="rivek">631人评价</p>
+                 <div class="review_waper">
+                   <a href="javascript:;">
+                   <span class="review">官方保护套做工精细贴合手机。</span>
+                   <span class="review_1">缺点有部分结合地方处理不...</span>
+                   <span class="author">  来自于 靖 的评价   </span>
+                   </a>
+                </div>
+              </div>
+
+              <div class="bd_10">
+               <div class="fotr_1"><img src="images/pms_1472198624.61936711!220x220.jpg" alt="" style="width: 80px;height: 80px;">
+                 <p class="xiaomi"> 红米Note4 智能显示保护套  </p>
+               <p class="prive">39元</p>
+               </div>
+               <div class="fotr_2"><img src="images/657.png" alt="">
+                   <p class="xiaomi"> 浏览更多  </p>
+               <p class="prive">保护套</p>
+               </div>
+              </div>
+              
+
+             </div>
+               
+
+<!-- ============================ -->
+       <!-- 周边栏目 -->
+     <div class="box-hd">
+          <h2 class="ter_h2">周边</h2>
+           <div class="J_brickNav">
+             <ul class="tab-list_1 ">
+              
+              <li>热门</li>
+              <li>服装</li>
+              <li>米兔</li>
+              <li>生活周边</li>
+              <li>箱包</li>
+            </ul>
+            </div>
+
+             <div class="J_brickBd">
+              <div class="bd_11"><img src="images/xmad_14896306034843_iKquy.jpg" alt=""></div>
+
+              <div class="bd_12"><img src="images/pms_1470619266.15986000!220x220.jpg" alt="">
+               <p class="xiaomi">  小米米兔音箱  </p>
+               <p class="prive">99元</p>
+               <p class="rivek">1545人评价</p>
+               <div class="ferte_me"> 享6折 </div>
+                <div class="review_waper">
+                   <a href="javascript:;">
+                   <span class="review">客服妹子 怎么用这么可爱的产品丫 </span>
+                   <span class="review_1">丫 刚开机吓到我了 超...</span>
+                   <span class="author">   来自于 PX 的评价   </span>
+                   </a>
+                </div>
+              </div>
+
+              <div class="bd_13"><img src="images/pms_1479972928.16946623!220x220.jpg" alt="">
+                <p class="xiaomi"> 最生活浴巾·青春系列 </p>
+               <p class="prive">99元</p>
+               <p class="rivek">911人评价</p>
+                  <div class="review_waper">
+                   <a href="javascript:;">
+                   <span class="review">很满意小米的产品！</span>
+                   <span class="review_1">客服妹子来个神回复吧！</span>
+                   <span class="author">    来自于 ༄凯哥 的评价   </span>
+                   </a>
+                </div>
+
+              </div>
+
+              <div class="bd_14"><img src="images/T1eKdgB4xv1RXrhCrK!220x220.jpg" alt="">
+                <p class="xiaomi">  小米电源线收纳盒 </p>
+               <p class="prive">49元</p>
+               <p class="rivek">3289人评价</p>
+               <div class="ferte_meter">新品</div>
+                 <div class="review_waper">
+                   <a href="javascript:;">
+                   <span class="review">我是个追求完美的人，</span>
+                   <span class="review_1">这个东东做到了。</span>
+                   <span class="author">   来自于 第二天 的评价  </span>
+                   </a>
+                </div>
+              </div>
+
+              <div class="bd_15"><img src="images/T1yo_gBm_v1RXrhCrK.jpg" alt="">
+
+                <p class="xiaomi"> 金属鼠标垫 小号 </p>
+               <p class="prive">49元</p>
+               <p class="rivek">1.1万人评价</p>
+                  <div class="ferte_me"> 享8折 </div>
+                 <div class="review_waper">
+                   <a href="javascript:;">
+                   <span class="review">为什么都要撩客服妹子呢？这样</span>
+                   <span class="review_1">是不对的。我就拍照做米粉...</span>
+                   <span class="author">    来自于 江都巡抚 的评价    </span>
+                   </a>
+                </div>
+              </div>
+           
+              <div class="bd_16"><img src="images/xmad_14877494013394_hRbYf.jpg" alt=""></div>
+
+              <div class="bd_17"><img src="images/pms_1469410489.30412121!220x220.jpg" alt="">
+                 <p class="xiaomi"> 米家签字笔  </p>
+               <p class="prive">12.9元</p>
+               <p class="rivek">3.2万人评价</p>
+
+                <div class="review_waper">
+                   <a href="javascript:;">
+                   <span class="review">手感超不错，就是客服小姐姐可</span>
+                   <span class="review_1">不可以给小仙女一个抱抱</span>
+                   <span class="author">    来自于 浅墨丶初白 的评价     </span>
+                   </a>
+                </div>
+              </div>
+
+              <div class="bd_18"><img src="images/pms_1472711253.2453066!220x220.jpg" alt="">
+                 <p class="xiaomi"> 8H护颈乳胶枕 </p>
+               <p class="prive">239元</p>
+               <p class="rivek">8180人评价</p>
+                  <div class="ferte_me"> 享8.9折 </div>
+                 <div class="review_waper">
+                   <a href="javascript:;">
+                   <span class="review">割开，膨的一声。。。涨了！</span>
+                   <span class="author">    来自于 明 的评价      </span>
+                   </a>
+                </div>
+              </div>
+
+              <div class="bd_19"><img src="images/pms_1466499316.73488636!220x220.jpg" alt="">
+                 <p class="xiaomi"> 13cm皮质米兔挂饰  </p>
+               <p class="prive">49元</p>
+               <p class="rivek">283人评价</p>
+                 <div class="review_waper">
+                   <a href="javascript:;">
+                   <span class="review">还行吧，比想象中的大一些，挂</span>
+                   <span class="review_1">包上会不会太娘了？</span>
+                   <span class="author">   来自于 朱葛格 的评价    </span>
+                   </a>
+                </div>
+              </div>
+
+              <div class="bd_10">
+               <div class="fotr_1"><img src="images/T1fODjBsbT1RXrhCrK!220x220.jpg" alt="" style="width: 80px;height: 80px;">
+                 <p class="xiaomi"> 鼠标垫加大号  </p>
+               <p class="prive">19元</p>
+               </div>
+               <div class="fotr_2"><img src="images/657.png" alt="">
+                   <p class="xiaomi"> 浏览更多  </p>
+               <p class="prive">生活周边</p>
+               </div>
+              </div>
+              
+
+             </div>
+               
+<!-- ================================= -->
+       <!-- 为你推荐 -->
+          <div class="box-wanter">
+            <h2 class="home">为你推荐</h2>
+              <div class="home_jk">
+                 <a href="javascript:;" class="jk_1"><img src="images/xiangzuozou.png" alt=""></a>
+                 <a href="javascript:;" class="jk_2"><img src="images/xiangyouzou.png" alt=""></a>
+              </div>
+          </div>
+           <div class="div_homen">
+              <ul>
+                <li><a href="javascript:;"><img src="images/pms_1469583247.6157588.jpg" alt=""></a>
+                  <p class="homen_1"> 小米笔记本Air 13.3英寸 </p>
+                  <p class="homen_2">4999元</p>
+                  <p class="homen_3"> 8810人好评 </p>
+                </li>
+                <li><a href="javascript:;"><img src="images/pms_1475052168.43877575.jpg" alt=""></a>
+                   <p class="homen_1">  小米笔记本Air13.3英寸尊享版  </p>
+                  <p class="homen_2">5999元</p>
+                  <p class="homen_3"> 705人好评 </p>
+                </li>
+                <li><a href="javascript:;"><img src="images/pms_1477389928.07792706.jpg" alt=""></a>
+                   <p class="homen_1">  小米电视3s 65英寸 影院版  </p>
+                  <p class="homen_2">6699元</p>
+                <p class="homen_3"> 2705人好评 </p>
+                </li>
+                <li><a href="javascript:;"><img src="images/pms_1488338229.6467773.jpg" alt=""></a>
+                   <p class="homen_1">  Amazfit 运动手表  </p>
+                  <p class="homen_2">799元</p>
+                  <p class="homen_3">    3129人好评 </p>
+                </li>
+                <li><a href="javascript:;"><img src="images/pms_1490666381.06634471.jpg" alt=""></a>
+                   <p class="homen_1"> 小米路由器 HD </p>
+                  <p class="homen_2">1299元</p>
+                  <p class="homen_3">   189人好评   </p>
+                </li>
+              </ul>
+           </div>
+
+           <!-- 热评产品栏目 -->
+   <div class="box_form">
+     <h2 class="work_re">热评产品</h2>
+      <div class="work_fix">
+         <ul>
+           <li><a href=""><img src="images/05972209-0c29-4f2f-9844-09de1093ab02.jpg" alt=""></a>
+             <p class="fix_1">样子好可爱，特别是转来转去时很有趣。让它休眠时它就会把头转过去背对着你了，唤醒它又会自动转回来。你叫...</p>
+             <p class="fix_2"> 来自于 随风 的评价 </p>
+             <div class="fix_3"><h3>米家小白智能摄像机</h3><span class="sep">|</span><p class="price">399元</p></div>
+           </li>
+           <li><a href=""><img src="images/54e35fdd-bc68-4a89-bad7-c9c3bb2fc6fe.jpg" alt=""></a>
+             <p class="fix_1">包装很让人感动，式样也很可爱，做出的饭全家人都爱吃，超爱五星！手机控制还是不太熟练，最主要是没有连接...</p>
+             <p class="fix_2">  来自于 HZG 的评价 </p>
+             <div class="fix_3"><h3>米家压力IH电饭煲</h3><span class="sep">|</span><p class="price">999元</p></div>
+           </li>
+           <li><a href=""><img src="images/aa6b038a-2946-4549-acff-17c58e701556.jpg" alt=""></a>
+             <p class="fix_1">东西真心不错，用过最好用的插线板，做工外观没得挑剔，3个USB接口很实用，充电快，建议不包邮的应该在...</p>
+             <p class="fix_2">  来自于 yinyin19891117 的评价  </p>
+             <div class="fix_3"><h3>小米插线板</h3><span class="sep">|</span><p class="price">49元</p></div>
+           </li>
+           <li><a href=""><img src="images/8949026b-fa9a-4370-989b-5d5e2f149106.jpg" alt=""></a>
+             <p class="fix_1">安装简洁方便，信号不错！！！！！</p>
+             <p class="fix_2">  来自于 追逆 的评价  </p>
+             <div class="fix_3"><h3>小米路由器3</h3><span class="sep">|</span><p class="price">149元</p></div>
+           </li>
+         </ul>
+      </div>
+   
+    <!-- 内容栏目 -->
+ <div class="work_mei">
+    <h2 class="work_metao">内容</h2>
+     <div class="work_remf">
+       <ul class="medews">
+         <li class="border_1"><a href="javascript:;"><img src="images/5e5da924-84e3-4959-9e25-5891cdf30757.jpg" alt=""></a><h2 class="mede_1">图书</h2>
+         <p class="mede_2">哈利·波特与被诅咒的孩子</p>
+         <p class="mede_3">“哈利·波特”第八个故事中文版 </p>
+         <p class="mede_4">震撼来袭！特别彩排版剧本！</p>
+         <p class="mede_5">29.37元</p>
+           <div class="xm-pagers">
+             <div class="xm_der"></div>
+             <div class="xm_der_1"></div>
+             <div class="xm_der_2"></div>
+             <div class="xm_der_3"></div>
+           </div>
+         </li>
+         <li class="border_2"><a href="javascript:;"><img src="images/xmad_14891320737036_vZAlk.jpg" alt=""></a>
+           <h2 class="mede_f">MIUI 主题</h2>
+         <p class="mede_2">小米5c尊黑版</p>
+         <p class="mede_3">小米5c动态尊黑主题，首发上线！ </p>
+         <p class="mede_4">会动的默认壁纸</p>
+         <p class="mede_5">9米币</p>
+           <div class="xm-pagers_1">
+             <div class="xm_der"></div>
+             <div class="xm_der_1"></div>
+             <div class="xm_der_2"></div>
+             <div class="xm_der_3"></div>
+           </div>
+         </li>
+         <li class="border_3"><a href="javascript:;"><img src="images/T1czW_BXCv1R4cSCrK.png" alt=""></a>
+           <h2 class="mede_u">游戏</h2>
+         <p class="mede_2">米柚手游模拟器</p>
+         <p class="mede_3">在电脑上玩遍小米所有手游 </p>
+         <p class="mede_6">免费</p>
+           <div class="xm-pagers_2">
+             <div class="xm_der"></div>
+             <div class="xm_der_1"></div>
+             <div class="xm_der_2"></div>
+             <div class="xm_der_3"></div>
+           </div>
+         </li>
+         <li class="border_4"><a href="javascript:;"><img src="images/3332da7d-4056-4694-9548-c83b7b3af7d3.png" alt=""></a>
+         <h2 class="mede_n">应用</h2>
+         <p class="mede_2">2017金米奖</p>
+         <p class="mede_3">最优秀的应用和游戏 </p>
+           <div class="xm-pagers_3">
+             <div class="xm_der"></div>
+             <div class="xm_der_1"></div>
+             <div class="xm_der_2"></div>
+             <div class="xm_der_3"></div>
+           </div>
+         </li>
+       </ul>
+     </div>
+     <!-- ============================================== -->
+
+     <div class="boacker_er">
+       <h2 class="aut_er">视频</h2>
+       <div class="aur_e"><a href="javascript:;"></a></div>
+       </div>
+       <div class="bomber_ker">
+         <ul>
+           <li class="kermet"><a href="javascript:;"><img src="images/xmad_14918846745236_hlYCc.jpg" alt="" style="width: 296px;height: 180px;"><span class="play"></span></a>
+              <p class="kert_sa">小寻儿童电话手表陪伴孩子的一天</p>
+              <p class="kert_a">孩子的守护小精灵</p>
+           </li>
+           <li class="kermet_1"><a href="javascript:;"><img src="images/xmad_1491986073765_QZrcG.jpg" alt="" style="width: 296px;height: 180px;"><span class="play"></span></a>
+              <p class="kert_sa">小米接连斩获国际顶尖设计大奖</p>
+              <p class="kert_a">工业设计师们讲述背后的设计理念</p>
+           </li>
+           <li  class="kermet_2"><a href="javascript:;"><img src="images/xmad_14871526814173_kmTJB.jpg" alt="" style="width: 296px;height: 180px;"><span class="play"></span></a>
+               <p class="kert_sew">红米Note 4X 环岛挑战</p>
+              <p class="kert_a">看看我们关于超长续航的疯狂想法</p>
+           </li>
+           <li  class="kermet_3"><a href="javascript:;"><img src="images/54c8d6f8-8a81-4853-8b19-857b77fac410.jpg" alt="" style="width: 296px;height: 180px;"><span class="play"></span></a>
+            <p class="kert_sat">小米MIX 概念手机背后的故事</p>
+              <p class="kert_a">雷总亲自讲述小米MIX 的诞生</p>
+                  </li>
+                 </ul>
+              </div>
+             </div>
+           </div>
+<!-- ============================================== -->
+       </div>
+   </div>
+</div>
+</div>
+</div>
+
+<!-- 页脚底部 -->
+ <div class="slid_fiter">
+    <div class="contaipe">
+
+      <div class="footer-service">
+        <ul class="list-service">
+          <li><a href="javascsript:;">
+            <i class="iconfont"><img src="./images/1974.png" alt=""></i>
+            预约维修服务
+          </a></li>
+          <li><a href="javascsript:;">
+            <i class="iconfont"><img src="./images/1546.png" alt=""></i>
+            7天无理由退货
+          </a></li>
+          <li><a href="javascsript:;">
+            <i class="iconfont"><img src="./images/1567.png" alt=""></i>
+            15天免费换货
+          </a></li>
+          <li><a href="javascsript:;">
+            <i class="iconfont"><img src="./images/1435.png" alt=""></i>
+           满150元包邮
+          </a></li>
+          <li class="conft"><a href="javascsript:;">
+            <i class="iconfont"><img src="./images/99999.png" alt=""></i>
+           520余家售后网点
+          </a></li>
+        </ul></div>
+       <div class="footer-links">
+         <dl class="col-links">
+           <dt>帮助中心</dt>
+             <dd><a href="javascript:;">账户管理</a></dd>
+             <dd><a href="javascript:;">购物指南</a></dd>
+             <dd><a href="javascript:;">订单操作</a></dd>
+         </dl>
+
+         <dl class="col-links">
+           <dt>服务支持</dt>
+             <dd><a href="javascript:;">售后政策</a></dd>
+             <dd><a href="javascript:;">自助服务</a></dd>
+             <dd><a href="javascript:;">相关下载</a></dd>
+         </dl>
+
+         <dl class="col-links">
+           <dt>线下门店</dt>
+             <dd><a href="javascript:;">小米之家</a></dd>
+             <dd><a href="javascript:;">服务网点</a></dd>
+             <dd><a href="javascript:;">零售网点</a></dd>
+         </dl>
+
+         <dl class="col-links">
+           <dt>关于小米</dt>
+             <dd><a href="javascript:;">了解小米</a></dd>
+             <dd><a href="javascript:;">加入小米</a></dd>
+             <dd><a href="javascript:;">联系我们</a></dd>
+         </dl>
+        
+         <dl  class="col-links">
+            <dt>关注我们</dt>
+             <dd><a href="javascript:;">新浪微博</a></dd>
+             <dd><a href="javascript:;">小米部落</a></dd>
+             <dd><a href="javascript:;">官方微信</a></dd>
+         </dl>
+
+         <dl  class="col-links">
+            <dt>线下门店</dt>
+             <dd><a href="javascript:;">F 码通道</a></dd>
+             <dd><a href="javascript:;">礼物码</a></dd>
+             <dd><a href="javascript:;">防伪查询</a></dd>
+         </dl>
+       <div class="col-contact">
+         <p class="phone">400-100-5678</p>
+         <p>
+           <span class="J_serviceTime-normal">周一至周日 8:00-18:00</span><br>
+           <span class="J_serviceTime-holiday">1月27日至2月2日服务时间 9:00-18:00</span><br>
+           （仅收市话费）
+         </p>
+         <a href="javascript:;" class=" btn-line-primary "><i class="iconfont"> 24小时在线客服</i></a>
+       </div>
+    </div>
+    </div>
+     <!-- 底部横栏 -->
+      <div class="site-info">
+        <div class="comfeg">
+          <div class="logoir">小米官网</div>
+          <div class="info-text">
+            <p class="sites">
+             <a href="javascript:;">小米商城</a>
+            <!--  <span class="sept">|</span> -->
+             <a href="javascript:;">MIUI</a>
+              <!-- <span class="sept">|</span> -->
+             <a href="javascript:;">米聊</a>
+              <!-- <span class="sept">|</span> -->
+             <a href="javascript:;">多看书城</a>
+              <!-- <span class="sept">|</span> -->
+             <a href="javascript:;">小米路由器</a>
+              <!-- <span class="sept">|</span> -->
+             <a href="javascript:;">视频电话</a>
+              <!-- <span class="sept">|</span> -->
+             <a href="javascript:;">小米天猫店</a>
+              <!-- <span class="sept">|</span> -->
+             <a href="javascript:;">小米淘宝直营店</a>
+              <!-- <span class="sept">|</span> -->
+             <a href="javascript:;">小米网盟</a>
+              <!-- <span class="sept">|</span> -->
+             <a href="javascript:;">小米移动</a>
+              <!-- <span class="sept">|</span> -->
+             <a href="javascript:;">隐私政策</a>
+              <!-- <span class="sept">|</span> -->
+             <a href="javascript:;" class="reg">Select Region</a>
+            </p>
+            <p class="micom">©
+            <a href="javascript:;">mi.com</a> 京ICP证110507号 
+            <a href="javascript:;">京ICP备10046444号</a>
+            <a href="javascript:;">京公网安备11010802020134号</a>
+            <a href="javascript:;">京网文[2014]0059-0009号</a>
+            <a href="javascript:;"></a><br>
+             违法和不良信息举报电话 ： 185-0130-1238 ,   本网站所列数据 ,   除特殊说明  ， 所有数据均出自我司实验室测试
+            </p>
+          </div>
+          <div class="info-links">
+            <img src="./images/1000.png" alt="">
+            <img src="./images/123.png" alt="诚信网站"><span class="chenxi">诚信网站</span><span>示范企业</span></a>
+            <img src="./images/20.png" alt="" class="img"><span class="kexi">可信网站</span><span class="xinyon">信用评价</span></a>
+           <img src="./images/67.png" alt="" class="number"><p class="wang">网上交友</p><p class="bao">保障中心</p>
+          </div>
+         
+        </div>
+         <div class="slogan">探索黑科技，小米为发烧而生!</div>
+      </div>
+ </div>
+
+ 
+<!-- ==============结尾================== -->
+</div>
+
+  </div>
+
+</div>
+</body>
+<script type="text/javascript">
+$(document).ready(function(){
+    var cur =0;
+    //点击导航按钮切换图标
+    $(".slide div").click(clickFn);
+    var timer = setInterval(autoPlay,3000);
+
+    //鼠标移入停止播放
+    $(".right").mouseenter(function(){
+        clearInterval(timer);
+    });
+    $(".right").mouseleave(function(){
+        timer = setInterval(autoPlay,3000);
+    });
+
+//鼠标单击事件
+    function clickFn(){
+        var _this =$(this);
+        cur =_this.index();
+        _this.fadeTo("opacity","1").siblings().fadeTo("opacity","0.4");
+        $(".right ul li").eq(cur ).fadeIn(1000).siblings().fadeOut(1000);
+}
+//轮播函数
+    function autoPlay(){
+        $(".slide  div").eq(cur+1).click();
+        if(cur>=5){
+        cur =-1;
+        }
+    }
+});
+</script>
+</html>
