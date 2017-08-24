@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>图片的切换</title>
+		<style type="text/css">
+			p{ 
+				margin:0;
+			}
+      body { 
+      	text-align:center; 
+      }
+      #box { 
+      	width:790px; 
+      	height:340px; 
+      	border:5px solid green; 
+      	margin:50px auto 0; 
+      	position:relative; 
+      }
+      a { 
+      	width:40px; 
+      	height:40px; 
+      	background:lawngreen; 
+      	filter:alpha(opacity:80); 
+      	opacity:0.8; 
+      	position:absolute; 
+      	top:160px; 
+      	font-size:25px; 
+      	color:#000; 
+      	text-align:center; 
+      	line-height:40px; 
+      	text-decoration:none;
+      }
+      a:hover { 
+      	filter:alpha(opacity:30); 
+      	opacity:0.3; 
+      }
+      #prev { 
+      	left:10px; 
+      }
+      #next { 
+      	right:10px;
+      }
+      #per { 
+      	width:790px;
+        height:30px; 
+        line-height:30px; 
+        text-align:center; 
+        background:#000; 
+        color:#fff; 
+        font-size:14px; 
+        filter:alpha(opacity:80); 
+        opacity:0.8; 
+        position:absolute; 
+        bottom:0; 
+        left:0; 
+        
+      }
+      strong { 
+      	width:790px; 
+      	height:30px; 
+      	line-height:30px; 
+      	text-align:center; 
+      	background:#000; 
+      	color:#fff; 
+      	font-size:14px; 
+      	filter:alpha(opacity:80); 
+      	opacity:0.8; 
+      	position:absolute;
+      	top:0; 
+      	left:0; 
+      	
+      }
+      #image { 
+      	width:790px;
+      	height:340px; 
+      }
+      span { 
+      	position:absolute;
+      	 width:400px; 
+      	 height:30px;
+      	 line-height:30px; 
+      	 text-align:center; 
+      	 top:-50px; 
+      	 left:0; 
+      	 font-family:'微软雅黑'; 
+      	 left:200px;
+      	 
+      }
+		</style>
+	</head>
+	<body>
+		<input type="button" name="" id="" value="循环切换" />
+		<input type="button" name="" id="" value="顺序切换" />
+		
+		<div id="box">
+			<span>图片切换</span>
+			<a href="javascript:;" id="prev"><</a>
+			<a href="javascript:;" id="next">></a>
+			<p id="per">图片文字加载中……</p>
+			<strong id="store">图片数量计算中……</strong>
+			<img id="image">
+		</div>
+	</body>
+	<script type="text/javascript">
+		window.onload = function(){
+//			获取节点
+			var oPrev = document.getElementById("prev");
+			var oNext =document.getElementById("next");
+			var oPer =document.getElementById("per");
+			var oStore =document.getElementById("store");
+			var oImgae =document.getElementById("image");
+			var oBtn = document.getElementsByTagName("input");
+			//数组的声明
+			var arr =[
+			  "img/1.jpg",
+			  "img/2.jpg",
+			  "img/3.jpg",
+			  "img/4.jpg",
+			  "img/bannerbg.png",
+			  "img/footerbg.jpg"
+			];
+			
+			var Text=[
+			  "冰箱洗衣机",
+			  "超级品牌日",
+			  "家电奢品廊",
+			  "降温大作战",
+			  "商品月枫林",
+			  "黄聆听月龄"
+			];
+			var num =0;
+			var Off =true;
+			 //顺序和循环的切换
+			oBtn[0].onclick =function(){
+				Off =true; 
+				document.getElementsByTagName("span")[0].innerHTML="图片循环切换";
+			};
+			oBtn[1].onclick =function(){
+				Off=false;
+				document.getElementsByTagName("span")[0].innerHTML="图片顺序切换";
+			};
+			//初始化
+			function Fertab(){
+				oPer.innerHTML =Text[num];
+				oStore.innerHTML=num+1+"/"+Text.length;
+				oImgae.src = arr[num];
+			};
+			Fertab();
+			//点击左箭头
+			oPrev.onclick = function(){
+				num--;
+				if(num==-1){
+					if(Off){
+						num=Text.length-1;
+					}
+					else{
+						alert("这已经是第一张了，不能在向前了！！！");
+						num=0;
+					}
+				}
+				Fertab();
+			};
+			oNext.onclick = function(){
+				num++;
+				if(num==Text.length){
+					if(Off){
+						num=0;
+					}
+					else{
+						alert("已经到了最后一张了！！！");
+						num=Text.length-1;
+					}
+				}
+				Fertab();
+			};
+		}
+	</script>
+</html>
